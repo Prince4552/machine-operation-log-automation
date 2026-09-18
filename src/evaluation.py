@@ -1,36 +1,42 @@
 """
-Evaluate predicted segments against Dataset A ground truth.
-
-This version evaluates a complete multi-session prediction file.
+Evaluate predicted process segments against Dataset A ground truth.
 
 Expected prediction format (JSONL):
-{"session_id": "...", "start": "...", "end": "...", "label": "..."}
+    {"session_id": "...", "start": "...", "end": "...", "label": "..."}
 
 Expected GT format:
-the JSON produced by ground_truth.py, containing:
-{
-    "sessions": [
-        {
-            "session_id": "...",
-            "segments": [...]
-        },
-        ...
-    ]
-}
+    the JSON produced by ground_truth.py, containing:
+    {
+        "sessions": [
+            {
+                "session_id": "...",
+                "segments": [...]
+            },
+            ...
+        ]
+    }
 
-The main metric is internal boundary detection:
-- GT boundaries = start time of every GT segment except the first
-- predicted boundaries = start time of every predicted segment except the first
+T0 boundary metric:
+    GT boundaries = unique union of every segment start and end timestamp.
+    Predicted boundaries = unique union of every segment start and end timestamp.
 
-Matching is one-to-one within the requested tolerance.
+Boundaries are matched one-to-one within each tolerance. The matcher uses a
+1-D greedy strategy that maximizes the number of valid matches for equal-width
+(timestamp) tolerance windows. Sessions missing on either side are still
+evaluated so that omitted predictions become false negatives and extra
+prediction-only sessions become false positives.
+
+Pairwise same-process F1 is intentionally not implemented here yet because it
+requires the activity-to-execution assignment produced by the relationship /
+work-unit layer. It should be added once that intermediate representation
+exists, rather than inventing an artificial mapping at this stage.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import math
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -39,7 +45,7 @@ TOLERANCES = (0.5, 1.0, 2.0, 5.0)
 
 
 def parse_timestamp(value: str) -> datetime:
-    """Parse an ISO-8601 timestamp and require timezone information."""
+    """Parse an ISO-8601 timestamp and normalize it to UTC."""
     if not isinstance(value, str):
         raise ValueError(f"timestamp must be a string, got {type(value).__name__}")
 
@@ -48,11 +54,10 @@ def parse_timestamp(value: str) -> datetime:
         text = text[:-1] + "+00:00"
 
     dt = datetime.fromisoformat(text)
-
     if dt.tzinfo is None:
         raise ValueError(f"timestamp must include a timezone: {value!r}")
 
-    return dt
+    return dt.astimezone(timezone.utc)
 
 
 def load_predictions(path: Path) -> dict[str, list[dict[str, Any]]]:
@@ -87,28 +92,20 @@ def load_predictions(path: Path) -> dict[str, list[dict[str, Any]]]:
                     f"Prediction line {line_no}: session_id must be a non-empty string."
                 )
 
+            label = record["label"]
+            if not isinstance(label, str) or not label.strip():
+                raise ValueError(
+                    f"Prediction line {line_no}: label must be a non-empty string."
+                )
+
             start = parse_timestamp(record["start"])
             end = parse_timestamp(record["end"])
-
             if end <= start:
                 raise ValueError(f"Prediction line {line_no}: end must be after start.")
 
             by_session.setdefault(session_id, []).append(record)
 
-    for session_id, segments in by_session.items():
-        segments.sort(key=lambda x: parse_timestamp(x["start"]))
-
-        for previous, current in zip(segments, segments[1:]):
-            previous_end = parse_timestamp(previous["end"])
-            current_start = parse_timestamp(current["start"])
-
-            if current_start < previous_end:
-                raise ValueError(
-                    f"Predicted segments overlap in session {session_id!r}: "
-                    f"{previous['start']}..{previous['end']} overlaps "
-                    f"{current['start']}..{current['end']}."
-                )
-
+    validate_non_overlapping_segments(by_session, source_name="predictions")
     return by_session
 
 
@@ -144,7 +141,6 @@ def load_ground_truth(path: Path) -> dict[str, dict[str, Any]]:
             )
 
         cleaned_segments: list[dict[str, Any]] = []
-
         for index, segment in enumerate(gt_segments, start=1):
             if not isinstance(segment, dict):
                 raise ValueError(
@@ -160,7 +156,6 @@ def load_ground_truth(path: Path) -> dict[str, dict[str, Any]]:
 
             start = parse_timestamp(segment["start"])
             end = parse_timestamp(segment["end"])
-
             if end <= start:
                 raise ValueError(
                     f"GT segment {index} in session {session_id!r}: end must be after start."
@@ -169,75 +164,86 @@ def load_ground_truth(path: Path) -> dict[str, dict[str, Any]]:
             cleaned_segments.append(segment)
 
         cleaned_segments.sort(key=lambda x: parse_timestamp(x["start"]))
-
-        for previous, current in zip(cleaned_segments, cleaned_segments[1:]):
-            previous_end = parse_timestamp(previous["end"])
-            current_start = parse_timestamp(current["start"])
-
-            if current_start < previous_end:
-                raise ValueError(
-                    f"GT segments overlap in session {session_id!r}: "
-                    f"{previous['start']}..{previous['end']} overlaps "
-                    f"{current['start']}..{current['end']}."
-                )
-
         session_copy = dict(session_record)
         session_copy["segments"] = cleaned_segments
         by_session[session_id] = session_copy
 
+    validate_non_overlapping_segments(
+        {sid: record["segments"] for sid, record in by_session.items()},
+        source_name="ground truth",
+    )
     return by_session
 
 
-def internal_boundaries(segments: list[dict[str, Any]]) -> list[float]:
-    """
-    Return internal segmentation boundaries as Unix timestamps.
+def validate_non_overlapping_segments(
+    by_session: dict[str, list[dict[str, Any]]],
+    source_name: str,
+) -> None:
+    """Validate ordering and non-overlap for each session."""
+    for session_id, segments in by_session.items():
+        segments.sort(key=lambda x: parse_timestamp(x["start"]))
 
-    We use starts of segments after the first segment. This represents each
-    process transition exactly once instead of counting both the previous
-    segment's end and the next segment's start.
-    """
-    if len(segments) <= 1:
-        return []
+        for previous, current in zip(segments, segments[1:]):
+            previous_end = parse_timestamp(previous["end"])
+            current_start = parse_timestamp(current["start"])
+            if current_start < previous_end:
+                raise ValueError(
+                    f"{source_name} segments overlap in session {session_id!r}: "
+                    f"{previous['start']}..{previous['end']} overlaps "
+                    f"{current['start']}..{current['end']}."
+                )
 
-    return [parse_timestamp(segment["start"]).timestamp() for segment in segments[1:]]
+
+def boundary_times(segments: list[dict[str, Any]]) -> list[datetime]:
+    """Return the unique union of all segment starts and ends, sorted in time."""
+    boundaries: set[datetime] = set()
+
+    for segment in segments:
+        boundaries.add(parse_timestamp(segment["start"]))
+        boundaries.add(parse_timestamp(segment["end"]))
+
+    return sorted(boundaries)
 
 
 def match_boundaries(
-    predicted: list[float],
-    ground_truth: list[float],
+    predicted: list[datetime],
+    ground_truth: list[datetime],
     tolerance_seconds: float,
 ) -> tuple[int, int, int]:
-    """Greedily one-to-one match predicted boundaries to GT boundaries."""
+    """
+    Match boundaries one-to-one with maximum-cardinality greedy matching.
+
+    Because every boundary has the same symmetric tolerance window, scanning
+    both sorted lists and taking the earliest feasible pair maximizes the
+    number of matches. This avoids a nearest-neighbour greedy failure mode
+    where an early prediction can consume a GT boundary needed by a later one.
+    """
     predicted = sorted(predicted)
     ground_truth = sorted(ground_truth)
 
-    used_gt: set[int] = set()
+    tolerance = tolerance_seconds
+    pred_index = 0
+    gt_index = 0
     true_positives = 0
 
-    for predicted_time in predicted:
-        best_index = None
-        best_distance = math.inf
+    while pred_index < len(predicted) and gt_index < len(ground_truth):
+        difference = (predicted[pred_index] - ground_truth[gt_index]).total_seconds()
 
-        for index, gt_time in enumerate(ground_truth):
-            if index in used_gt:
-                continue
-
-            distance = abs(predicted_time - gt_time)
-
-            if distance <= tolerance_seconds and distance < best_distance:
-                best_index = index
-                best_distance = distance
-
-            if gt_time > predicted_time + tolerance_seconds:
-                break
-
-        if best_index is not None:
-            used_gt.add(best_index)
+        if difference < -tolerance:
+            # GT is too late for the current prediction; discard this prediction.
+            pred_index += 1
+        elif difference > tolerance:
+            # GT is too early for the current prediction; no future prediction
+            # can match it better without violating sorted order.
+            gt_index += 1
+        else:
+            # Earliest feasible pair. Consume both exactly once.
             true_positives += 1
+            pred_index += 1
+            gt_index += 1
 
     false_positives = len(predicted) - true_positives
     false_negatives = len(ground_truth) - true_positives
-
     return true_positives, false_positives, false_negatives
 
 
@@ -275,8 +281,8 @@ def evaluate_session(
     gt_segments: list[dict[str, Any]],
 ) -> dict[str, Any]:
     """Evaluate one session at all configured tolerances."""
-    predicted_boundaries = internal_boundaries(predicted_segments)
-    gt_boundaries = internal_boundaries(gt_segments)
+    predicted_boundaries = boundary_times(predicted_segments)
+    gt_boundaries = boundary_times(gt_segments)
 
     result: dict[str, Any] = {
         "predicted_segments": len(predicted_segments),
@@ -302,24 +308,23 @@ def evaluate_all(
     ground_truth: dict[str, dict[str, Any]],
     requested_session: str | None = None,
 ) -> dict[str, Any]:
-    """Evaluate all common sessions and micro-average TP/FP/FN."""
+    """
+    Evaluate every session in the union of prediction and GT session IDs.
+
+    Missing predictions therefore contribute FN, while prediction-only sessions
+    contribute FP, instead of disappearing from the aggregate score.
+    """
     if requested_session is not None:
-        if requested_session not in ground_truth:
+        if requested_session not in predictions and requested_session not in ground_truth:
             raise ValueError(
-                f"Requested session {requested_session!r} is not present in GT."
-            )
-        if requested_session not in predictions:
-            raise ValueError(
-                f"Requested session {requested_session!r} is not present in predictions."
+                f"Requested session {requested_session!r} is not present in predictions or GT."
             )
         session_ids = [requested_session]
     else:
-        session_ids = sorted(set(predictions) & set(ground_truth))
+        session_ids = sorted(set(predictions) | set(ground_truth))
 
     if not session_ids:
-        raise ValueError(
-            "No common session_ids were found between predictions and ground truth."
-        )
+        raise ValueError("No sessions were found in predictions or ground truth.")
 
     prediction_only = sorted(set(predictions) - set(ground_truth))
     gt_only = sorted(set(ground_truth) - set(predictions))
@@ -330,10 +335,10 @@ def evaluate_all(
     }
 
     for session_id in session_ids:
-        session_result = evaluate_session(
-            predictions[session_id],
-            ground_truth[session_id]["segments"],
-        )
+        predicted_segments = predictions.get(session_id, [])
+        gt_segments = ground_truth.get(session_id, {}).get("segments", [])
+
+        session_result = evaluate_session(predicted_segments, gt_segments)
         per_session[session_id] = session_result
 
         for tolerance in TOLERANCES:
@@ -357,6 +362,12 @@ def evaluate_all(
         "ground_truth_only_sessions": gt_only,
         "aggregate_micro": aggregate_metrics,
         "per_session": per_session,
+        "evaluation_definition": {
+            "boundary_set": "unique union of all segment starts and ends",
+            "matching": "one-to-one maximum-cardinality greedy matching",
+            "tolerances_seconds": list(TOLERANCES),
+            "missing_sessions_counted": True,
+        },
     }
 
 
@@ -364,24 +375,28 @@ def print_report(results: dict[str, Any]) -> None:
     """Print a compact human-readable evaluation report."""
     print()
     print("DATASET A BASELINE EVALUATION")
-    print("=" * 72)
+    print("=" * 78)
     print(f"Sessions evaluated:          {results['sessions_evaluated']}")
     print(f"Prediction sessions:         {results['prediction_sessions']}")
     print(f"Ground-truth sessions:       {results['ground_truth_sessions']}")
+    print(
+        f"Prediction-only sessions:    {len(results['prediction_only_sessions'])}"
+    )
+    print(f"GT-only sessions:             {len(results['ground_truth_only_sessions'])}")
 
-    if results["prediction_only_sessions"]:
-        print(
-            f"Prediction-only sessions:    {len(results['prediction_only_sessions'])}"
-        )
-
-    if results["ground_truth_only_sessions"]:
-        print(
-            f"GT-only sessions:            {len(results['ground_truth_only_sessions'])}"
-        )
+    definition = results["evaluation_definition"]
+    print()
+    print("EVALUATION DEFINITION")
+    print("-" * 78)
+    print(f"Boundaries:                   {definition['boundary_set']}")
+    print(f"Matching:                     {definition['matching']}")
+    print(
+        f"Missing sessions counted:     {definition['missing_sessions_counted']}"
+    )
 
     print()
-    print("MICRO-AVERAGED INTERNAL BOUNDARY METRICS")
-    print("-" * 72)
+    print("MICRO-AVERAGED BOUNDARY METRICS")
+    print("-" * 78)
     print(
         f"{'Tolerance':>12} {'TP':>8} {'FP':>8} {'FN':>8} "
         f"{'Precision':>12} {'Recall':>12} {'F1':>12}"
@@ -400,14 +415,11 @@ def print_report(results: dict[str, Any]) -> None:
         )
 
     print()
-    print(
-        "Boundary definition: start of each predicted/GT segment after the "
-        "first segment in that session."
-    )
-    print(
-        "This prevents one process transition from being counted twice as "
-        "both an end and a start."
-    )
+    print("INTEGRITY CHECK")
+    if results["prediction_only_sessions"] or results["ground_truth_only_sessions"]:
+        print("STATUS: REVIEW — prediction/GT session coverage differs.")
+    else:
+        print("STATUS: PASS — prediction and GT contain the same session IDs.")
 
 
 def build_parser() -> argparse.ArgumentParser:
