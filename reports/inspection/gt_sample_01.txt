@@ -1,0 +1,649 @@
+Session: ses_20260630-163424-SIDDHIGUPTAB00B
+Manifest: P:\I'm beside you\operation-log-automation\data\dataset_a\ses_20260630-163424-SIDDHIGUPTAB00B\gt_manifest.json
+GT log:   P:\I'm beside you\operation-log-automation\data\dataset_a\ses_20260630-163424-SIDDHIGUPTAB00B\gt.jsonl
+
+====================================================================================================
+GT MANIFEST
+====================================================================================================
+Run ID:        theme_m1_20260630_220339
+Session start: 2026-06-30T16:34:21.953169+00:00
+Session end:   2026-06-30T16:55:28.855784+00:00
+Processes:     9
+
+----------------------------------------------------------------------------------------------------
+PROCESS 1
+  Code:       A
+  Name:       住民税通知確認
+  Domain:     hr
+  Executions: 4
+
+  Execution 1
+    Code:                    A
+    Variant:                 std
+    Case ID:                 RT-220339-001
+    Start:                   2026-06-30T16:37:57.217406+00:00
+    End:                     2026-06-30T16:38:55.329689+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    A
+    Variant:                 std
+    Case ID:                 RT-220339-002
+    Start:                   2026-06-30T16:48:04.029724+00:00
+    End:                     2026-06-30T16:48:32.821900+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    A
+    Variant:                 std
+    Case ID:                 RT-220339-003
+    Start:                   2026-06-30T16:52:19.682409+00:00
+    End:                     
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   2
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 4
+    Code:                    A
+    Variant:                 exc
+    Case ID:                 RT-220339-004
+    Start:                   2026-06-30T16:53:22.541276+00:00
+    End:                     2026-06-30T16:54:26.415021+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   2
+    Sequence:                4
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 2
+  Code:       B
+  Name:       給与備考・控除整備
+  Domain:     hr
+  Executions: 4
+
+  Execution 1
+    Code:                    B
+    Variant:                 reg
+    Case ID:                 PI-220339-001
+    Start:                   2026-06-30T16:36:24.544122+00:00
+    End:                     2026-06-30T16:36:43.992556+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    B
+    Variant:                 reg
+    Case ID:                 PI-220339-002
+    Start:                   2026-06-30T16:37:03.701191+00:00
+    End:                     2026-06-30T16:37:26.534092+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    B
+    Variant:                 reg
+    Case ID:                 PI-220339-003
+    Start:                   2026-06-30T16:50:25.643202+00:00
+    End:                     2026-06-30T16:51:04.396747+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   2
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 4
+    Code:                    B
+    Variant:                 adj
+    Case ID:                 PI-220339-004
+    Start:                   2026-06-30T16:51:54.397871+00:00
+    End:                     2026-06-30T16:52:19.680560+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   2
+    Sequence:                4
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 3
+  Code:       D
+  Name:       社保・年金補正対応
+  Domain:     hr
+  Executions: 3
+
+  Execution 1
+    Code:                    D
+    Variant:                 
+    Case ID:                 SI-220339-001
+    Start:                   2026-06-30T16:35:10.144776+00:00
+    End:                     
+    Apps:                    ["chrome", "notepad", "teams"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    D
+    Variant:                 
+    Case ID:                 SI-220339-002
+    Start:                   2026-06-30T16:35:47.740296+00:00
+    End:                     2026-06-30T16:36:24.541388+00:00
+    Apps:                    ["chrome", "notepad", "teams"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    D
+    Variant:                 
+    Case ID:                 SI-220339-003
+    Start:                   2026-06-30T16:38:55.332997+00:00
+    End:                     2026-06-30T16:39:34.987531+00:00
+    Apps:                    ["chrome", "notepad", "teams"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 4
+  Code:       E
+  Name:       入社照合・手当確認
+  Domain:     hr
+  Executions: 3
+
+  Execution 1
+    Code:                    E
+    Variant:                 
+    Case ID:                 OB-220339-001
+    Start:                   2026-06-30T16:39:34.989260+00:00
+    End:                     2026-06-30T16:40:15.452687+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: True
+    Continues to next:       True
+
+  Execution 2
+    Code:                    E
+    Variant:                 
+    Case ID:                 OB-220339-002
+    Start:                   2026-06-30T16:51:04.401310+00:00
+    End:                     
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    E
+    Variant:                 
+    Case ID:                 OB-220339-003
+    Start:                   2026-06-30T16:51:28.548000+00:00
+    End:                     2026-06-30T16:51:54.395762+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 5
+  Code:       F
+  Name:       請求書承認
+  Domain:     finance
+  Executions: 4
+
+  Execution 1
+    Code:                    F
+    Variant:                 std
+    Case ID:                 INV-220339-001
+    Start:                   2026-06-30T16:37:27.981645+00:00
+    End:                     2026-06-30T16:37:57.215724+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    F
+    Variant:                 std
+    Case ID:                 INV-220339-002
+    Start:                   2026-06-30T16:40:15.459440+00:00
+    End:                     2026-06-30T16:40:44.935218+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    F
+    Variant:                 std
+    Case ID:                 INV-220339-003
+    Start:                   2026-06-30T16:41:46.335498+00:00
+    End:                     2026-06-30T16:42:14.525724+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 4
+    Code:                    F
+    Variant:                 exc
+    Case ID:                 INV-220339-004
+    Start:                   2026-06-30T16:43:01.209995+00:00
+    End:                     2026-06-30T16:43:42.250378+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                4
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 6
+  Code:       G
+  Name:       経費精算承認
+  Domain:     finance
+  Executions: 4
+
+  Execution 1
+    Code:                    G
+    Variant:                 reg
+    Case ID:                 EXP-220339-001
+    Start:                   2026-06-30T16:36:44.000421+00:00
+    End:                     2026-06-30T16:37:03.691532+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    G
+    Variant:                 reg
+    Case ID:                 EXP-220339-002
+    Start:                   2026-06-30T16:41:19.087775+00:00
+    End:                     2026-06-30T16:41:46.331612+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    G
+    Variant:                 reg
+    Case ID:                 EXP-220339-003
+    Start:                   2026-06-30T16:42:14.527374+00:00
+    End:                     2026-06-30T16:42:36.500197+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 4
+    Code:                    G
+    Variant:                 adj
+    Case ID:                 EXP-220339-004
+    Start:                   2026-06-30T16:45:37.782965+00:00
+    End:                     2026-06-30T16:46:06.564770+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                4
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 7
+  Code:       J
+  Name:       支払処理
+  Domain:     finance
+  Executions: 3
+
+  Execution 1
+    Code:                    J
+    Variant:                 
+    Case ID:                 PM-220339-001
+    Start:                   2026-06-30T16:42:36.510009+00:00
+    End:                     2026-06-30T16:43:01.205110+00:00
+    Apps:                    ["chrome", "excel", "notepad", "outlook"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    J
+    Variant:                 
+    Case ID:                 PM-220339-002
+    Start:                   2026-06-30T16:43:42.268039+00:00
+    End:                     2026-06-30T16:45:37.780974+00:00
+    Apps:                    ["chrome", "excel", "notepad", "outlook"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    J
+    Variant:                 
+    Case ID:                 PM-220339-003
+    Start:                   2026-06-30T16:49:30.153697+00:00
+    End:                     2026-06-30T16:49:57.079772+00:00
+    Apps:                    ["chrome", "excel", "notepad", "outlook"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 8
+  Code:       M
+  Name:       仕入先連絡
+  Domain:     ops
+  Executions: 3
+
+  Execution 1
+    Code:                    M
+    Variant:                 
+    Case ID:                 SUP-220339-001
+    Start:                   2026-06-30T16:46:06.567722+00:00
+    End:                     2026-06-30T16:47:00.094840+00:00
+    Apps:                    ["chrome", "notepad", "onenote"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    M
+    Variant:                 
+    Case ID:                 SUP-220339-002
+    Start:                   2026-06-30T16:47:29.240301+00:00
+    End:                     2026-06-30T16:48:04.028232+00:00
+    Apps:                    ["chrome", "notepad", "onenote"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    M
+    Variant:                 
+    Case ID:                 SUP-220339-003
+    Start:                   2026-06-30T16:54:26.420139+00:00
+    End:                     2026-06-30T16:55:28.855784+00:00
+    Apps:                    ["chrome", "notepad", "onenote"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+PROCESS 9
+  Code:       O
+  Name:       返品処理
+  Domain:     ops
+  Executions: 3
+
+  Execution 1
+    Code:                    O
+    Variant:                 
+    Case ID:                 RET-220339-001
+    Start:                   2026-06-30T16:40:44.943343+00:00
+    End:                     2026-06-30T16:41:19.084068+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                1
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 2
+    Code:                    O
+    Variant:                 
+    Case ID:                 RET-220339-002
+    Start:                   2026-06-30T16:47:00.115828+00:00
+    End:                     2026-06-30T16:47:29.237559+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                2
+    Continues from previous: False
+    Continues to next:       False
+
+  Execution 3
+    Code:                    O
+    Variant:                 
+    Case ID:                 RET-220339-003
+    Start:                   2026-06-30T16:49:57.086258+00:00
+    End:                     2026-06-30T16:50:25.638260+00:00
+    Apps:                    ["chrome", "excel", "notepad"]
+    Phase:                   1
+    Sequence:                3
+    Continues from previous: False
+    Continues to next:       False
+
+----------------------------------------------------------------------------------------------------
+Expected boundaries: 58
+  {"ts": "2026-06-30T16:35:10.144776+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:35:47.740296+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:36:24.541388+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:36:24.544122+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:36:43.992556+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:36:44.000421+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:37:03.691532+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:37:03.701191+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:37:26.534092+00:00", "type": "process_suspended", "code...
+  {"ts": "2026-06-30T16:37:27.981645+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:37:57.215724+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:37:57.217406+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:38:55.329689+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:38:55.332997+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:39:34.987531+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:39:34.989260+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:40:15.452687+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:40:15.459440+00:00", "type": "process_started", "code":...
+  {"ts": "2026-06-30T16:40:44.935218+00:00", "type": "process_switched_out", "c...
+  {"ts": "2026-06-30T16:40:44.943343+00:00", "type": "process_started", "code":...
+  ... (38 more)
+
+====================================================================================================
+GT EVENT TIMELINE
+====================================================================================================
+Timestamp                      Event                    Current process    Variant          Details
+---------------------------------------------------------------------------------------------------
+2026-06-30T16:34:21.953169+... run_config                                                   operator=加藤 直子 | dept=人事部 | machine=PC-M1-03
+2026-06-30T16:35:10.144776+... process_started          D                                   code=D | name=社保・年金補正対応 | case=SI-220339-001
+2026-06-30T16:35:10.153682+... task_started             D                                   task_id=SI-220339-001 | action=complete | entity=吉田 恵子
+2026-06-30T16:35:39.807173+... clipboard_paste          D                                   target_app=notepad | content=
+2026-06-30T16:35:47.740296+... process_started          D                                   code=D | name=社保・年金補正対応 | case=SI-220339-002
+2026-06-30T16:35:47.742542+... task_started             D                                   task_id=SI-220339-002 | action=complete | entity=中村 健太
+2026-06-30T16:36:16.827429+... clipboard_paste          D                                   target_app=notepad | content=
+2026-06-30T16:36:24.541388+... process_switched_out     D                                   from=D | to=B
+2026-06-30T16:36:24.544122+... process_started          B                  reg              code=B | name=給与備考・控除整備 | case=PI-220339-001
+2026-06-30T16:36:24.545245+... task_started             B                  reg              task_id=PI-220339-001 | action=register | entity=岩田 浩二
+2026-06-30T16:36:33.418184+... clipboard_copy           B                  reg              target_app= | content=岩田 浩二
+2026-06-30T16:36:33.425782+... clipboard_paste          B                  reg              target_app=excel | content=
+2026-06-30T16:36:43.992556+... process_switched_out     B                  reg              from=B | to=G
+2026-06-30T16:36:44.000421+... process_started          G                  reg              code=G | name=経費精算承認 | case=EXP-220339-001
+2026-06-30T16:36:44.002720+... task_started             G                  reg              task_id=EXP-220339-001 | action=register | entity=森田 彩香
+2026-06-30T16:36:51.979502+... clipboard_copy           G                  reg              target_app= | content=森田 彩香
+2026-06-30T16:36:51.983448+... clipboard_paste          G                  reg              target_app=excel | content=
+2026-06-30T16:37:03.691532+... process_switched_out     G                  reg              from=G | to=B
+2026-06-30T16:37:03.701191+... process_started          B                  reg              code=B | name=給与備考・控除整備 | case=PI-220339-002
+2026-06-30T16:37:03.703586+... task_started             B                  reg              task_id=PI-220339-002 | action=register | entity=川口 直樹
+2026-06-30T16:37:14.379595+... clipboard_copy           B                  reg              target_app= | content=川口 直樹
+2026-06-30T16:37:14.390996+... clipboard_paste          B                  reg              target_app=excel | content=
+2026-06-30T16:37:26.534092+... process_suspended        B                  reg              from=B | to=F | split_id=M1-B-split-1
+2026-06-30T16:37:27.981645+... process_started          F                  std              code=F | name=請求書承認 | case=INV-220339-001
+2026-06-30T16:37:27.982696+... task_started             F                  std              task_id=INV-220339-001 | action=confirm | entity=NECソリューション
+2026-06-30T16:37:37.948664+... clipboard_copy           F                  std              target_app= | content=NECソリューション
+2026-06-30T16:37:37.951524+... clipboard_paste          F                  std              target_app=excel | content=
+2026-06-30T16:37:50.488848+... clipboard_paste          F                  std              target_app=notepad | content=
+2026-06-30T16:37:57.215724+... process_switched_out     F                  std              from=F | to=A
+2026-06-30T16:37:57.217406+... process_started          A                  std              code=A | name=住民税通知確認 | case=RT-220339-001
+2026-06-30T16:37:57.218366+... task_started             A                  std              task_id=RT-220339-001 | action=confirm | entity=吉田 恵子
+2026-06-30T16:38:08.146133+... clipboard_copy           A                  std              target_app= | content=吉田 恵子
+2026-06-30T16:38:08.152834+... clipboard_paste          A                  std              target_app=excel | content=
+2026-06-30T16:38:16.356089+... clipboard_paste          A                  std              target_app=notepad | content=
+2026-06-30T16:38:55.329689+... process_switched_out     A                  std              from=A | to=D
+2026-06-30T16:38:55.332997+... process_started          D                                   code=D | name=社保・年金補正対応 | case=SI-220339-003
+2026-06-30T16:38:55.333961+... task_started             D                                   task_id=SI-220339-003 | action=complete | entity=伊藤 花子
+2026-06-30T16:39:26.349549+... clipboard_paste          D                                   target_app=notepad | content=
+2026-06-30T16:39:34.987531+... process_switched_out     D                                   from=D | to=E
+2026-06-30T16:39:34.989260+... process_started          E                                   code=E | name=入社照合・手当確認 | case=OB-220339-001
+2026-06-30T16:39:34.990151+... task_started             E                                   task_id=OB-220339-001 | action=complete | entity=山田 太郎
+2026-06-30T16:39:44.314645+... clipboard_copy           E                                   target_app= | content=山田 太郎
+2026-06-30T16:39:44.318336+... clipboard_paste          E                                   target_app=excel | content=
+2026-06-30T16:39:56.357020+... clipboard_paste          E                                   target_app=notepad | content=
+2026-06-30T16:40:15.452687+... process_switched_out     E                                   from=E | to=F
+2026-06-30T16:40:15.459440+... process_started          F                  std              code=F | name=請求書承認 | case=INV-220339-002
+2026-06-30T16:40:15.470556+... task_started             F                  std              task_id=INV-220339-002 | action=confirm | entity=シャープ株式会社
+2026-06-30T16:40:24.792954+... clipboard_copy           F                  std              target_app= | content=シャープ株式会社
+2026-06-30T16:40:24.807620+... clipboard_paste          F                  std              target_app=excel | content=
+2026-06-30T16:40:37.163984+... clipboard_paste          F                  std              target_app=notepad | content=
+2026-06-30T16:40:44.935218+... process_switched_out     F                  std              from=F | to=O
+2026-06-30T16:40:44.943343+... process_started          O                                   code=O | name=返品処理 | case=RET-220339-001
+2026-06-30T16:40:44.948715+... task_started             O                                   task_id=RET-220339-001 | action=complete | entity=仙台製作所
+2026-06-30T16:40:56.436162+... clipboard_copy           O                                   target_app= | content=コネクタアセンブリJ
+2026-06-30T16:40:56.439581+... clipboard_paste          O                                   target_app=excel | content=
+2026-06-30T16:41:09.713134+... clipboard_paste          O                                   target_app=notepad | content=
+2026-06-30T16:41:19.084068+... process_switched_out     O                                   from=O | to=G
+2026-06-30T16:41:19.087775+... process_started          G                  reg              code=G | name=経費精算承認 | case=EXP-220339-002
+2026-06-30T16:41:19.089328+... task_started             G                  reg              task_id=EXP-220339-002 | action=register | entity=石田 涼子
+2026-06-30T16:41:29.162433+... clipboard_copy           G                  reg              target_app= | content=石田 涼子
+2026-06-30T16:41:29.167654+... clipboard_paste          G                  reg              target_app=excel | content=
+2026-06-30T16:41:46.331612+... process_switched_out     G                  reg              from=G | to=F
+2026-06-30T16:41:46.335498+... process_started          F                  std              code=F | name=請求書承認 | case=INV-220339-003
+2026-06-30T16:41:46.337606+... task_started             F                  std              task_id=INV-220339-003 | action=confirm | entity=京セラ株式会社
+2026-06-30T16:41:55.058724+... clipboard_copy           F                  std              target_app= | content=京セラ株式会社
+2026-06-30T16:41:55.062717+... clipboard_paste          F                  std              target_app=excel | content=
+2026-06-30T16:42:06.985681+... clipboard_paste          F                  std              target_app=notepad | content=
+2026-06-30T16:42:14.525724+... process_switched_out     F                  std              from=F | to=G
+2026-06-30T16:42:14.527374+... process_started          G                  reg              code=G | name=経費精算承認 | case=EXP-220339-003
+2026-06-30T16:42:14.528081+... task_started             G                  reg              task_id=EXP-220339-003 | action=register | entity=佐藤 健一
+2026-06-30T16:42:22.489297+... clipboard_copy           G                  reg              target_app= | content=佐藤 健一
+2026-06-30T16:42:22.492046+... clipboard_paste          G                  reg              target_app=excel | content=
+2026-06-30T16:42:36.500197+... process_switched_out     G                  reg              from=G | to=J
+2026-06-30T16:42:36.510009+... process_started          J                                   code=J | name=支払処理 | case=PM-220339-001
+2026-06-30T16:42:36.512227+... task_started             J                                   task_id=PM-220339-001 | action=complete | entity=コニカミノルタ
+2026-06-30T16:42:45.268742+... clipboard_copy           J                                   target_app= | content=コニカミノルタ
+2026-06-30T16:42:45.282112+... clipboard_paste          J                                   target_app=excel | content=
+2026-06-30T16:42:52.130587+... clipboard_paste          J                                   target_app=notepad | content=
+2026-06-30T16:43:01.205110+... process_switched_out     J                                   from=J | to=F
+2026-06-30T16:43:01.209995+... process_started          F                  exc              code=F | name=請求書承認 | case=INV-220339-004
+2026-06-30T16:43:01.211766+... task_started             F                  exc              task_id=INV-220339-004 | action=query | entity=TDK株式会社
+2026-06-30T16:43:09.713416+... clipboard_copy           F                  exc              target_app= | content=TDK株式会社
+2026-06-30T16:43:09.722967+... clipboard_paste          F                  exc              target_app=excel | content=
+2026-06-30T16:43:17.872641+... clipboard_paste          F                  exc              target_app=notepad | content=
+2026-06-30T16:43:42.250378+... process_switched_out     F                  exc              from=F | to=J
+2026-06-30T16:43:42.268039+... process_started          J                                   code=J | name=支払処理 | case=PM-220339-002
+2026-06-30T16:43:42.270281+... task_started             J                                   task_id=PM-220339-002 | action=complete | entity=太陽誘電株式会社
+2026-06-30T16:43:51.711686+... clipboard_copy           J                                   target_app= | content=太陽誘電株式会社
+2026-06-30T16:43:51.721184+... clipboard_paste          J                                   target_app=excel | content=
+2026-06-30T16:43:58.867534+... clipboard_paste          J                                   target_app=notepad | content=
+2026-06-30T16:45:37.780974+... process_switched_out     J                                   from=J | to=G
+2026-06-30T16:45:37.782965+... process_started          G                  adj              code=G | name=経費精算承認 | case=EXP-220339-004
+2026-06-30T16:45:37.784501+... task_started             G                  adj              task_id=EXP-220339-004 | action=register | entity=松本 由美
+2026-06-30T16:45:47.369675+... clipboard_copy           G                  adj              target_app= | content=松本 由美
+2026-06-30T16:45:47.373786+... clipboard_paste          G                  adj              target_app=excel | content=
+2026-06-30T16:45:58.947022+... clipboard_paste          G                  adj              target_app=notepad | content=
+2026-06-30T16:46:06.564770+... process_switched_out     G                  adj              from=G | to=M
+2026-06-30T16:46:06.567722+... process_started          M                                   code=M | name=仕入先連絡 | case=SUP-220339-001
+2026-06-30T16:46:06.570080+... task_started             M                                   task_id=SUP-220339-001 | action=approve | entity=千葉金属工業
+2026-06-30T16:46:24.612989+... clipboard_copy           M                                   target_app= | content=Supplier_List.docx
+2026-06-30T16:46:37.656524+... clipboard_paste          M                                   target_app=notepad | content=
+2026-06-30T16:47:00.094840+... process_switched_out     M                                   from=M | to=O
+2026-06-30T16:47:00.115828+... process_started          O                                   code=O | name=返品処理 | case=RET-220339-002
+2026-06-30T16:47:00.124312+... task_started             O                                   task_id=RET-220339-002 | action=complete | entity=中部産業機器
+2026-06-30T16:47:10.699354+... clipboard_copy           O                                   target_app= | content=冷却ファンE
+2026-06-30T16:47:10.702824+... clipboard_paste          O                                   target_app=excel | content=
+2026-06-30T16:47:21.271505+... clipboard_paste          O                                   target_app=notepad | content=
+2026-06-30T16:47:29.237559+... process_switched_out     O                                   from=O | to=M
+2026-06-30T16:47:29.240301+... process_started          M                                   code=M | name=仕入先連絡 | case=SUP-220339-002
+2026-06-30T16:47:29.241407+... task_started             M                                   task_id=SUP-220339-002 | action=approve | entity=名古屋電子
+2026-06-30T16:47:43.987261+... clipboard_copy           M                                   target_app= | content=Supplier_List.docx
+2026-06-30T16:47:55.754632+... clipboard_paste          M                                   target_app=notepad | content=
+2026-06-30T16:48:04.028232+... process_switched_out     M                                   from=M | to=A
+2026-06-30T16:48:04.029724+... process_started          A                  std              code=A | name=住民税通知確認 | case=RT-220339-002
+2026-06-30T16:48:04.030439+... task_started             A                  std              task_id=RT-220339-002 | action=confirm | entity=中村 健太
+2026-06-30T16:48:14.300031+... clipboard_copy           A                  std              target_app= | content=中村 健太
+2026-06-30T16:48:14.303511+... clipboard_paste          A                  std              target_app=excel | content=
+2026-06-30T16:48:26.088443+... clipboard_paste          A                  std              target_app=notepad | content=
+2026-06-30T16:48:32.821900+... process_suspended        A                  std              from=A | to=J | split_id=M1-A-split-1
+2026-06-30T16:49:30.153697+... process_started          J                                   code=J | name=支払処理 | case=PM-220339-003
+2026-06-30T16:49:30.157148+... task_started             J                                   task_id=PM-220339-003 | action=flag | entity=アルプスアルパイン
+2026-06-30T16:49:40.554428+... clipboard_copy           J                                   target_app= | content=アルプスアルパイン
+2026-06-30T16:49:40.556540+... clipboard_paste          J                                   target_app=excel | content=
+2026-06-30T16:49:48.716259+... clipboard_paste          J                                   target_app=notepad | content=
+2026-06-30T16:49:57.079772+... process_switched_out     J                                   from=J | to=O
+2026-06-30T16:49:57.086258+... process_started          O                                   code=O | name=返品処理 | case=RET-220339-003
+2026-06-30T16:49:57.088606+... task_started             O                                   task_id=RET-220339-003 | action=flag | entity=株式会社北斗電機
+2026-06-30T16:50:08.105370+... clipboard_copy           O                                   target_app= | content=モーターG
+2026-06-30T16:50:08.109455+... clipboard_paste          O                                   target_app=excel | content=
+2026-06-30T16:50:18.027761+... clipboard_paste          O                                   target_app=notepad | content=
+2026-06-30T16:50:25.638260+... process_switched_out     O                                   from=O | to=B
+2026-06-30T16:50:25.643202+... process_resumed          B                  reg              process=B | split_id=M1-B-split-1 | phase=2
+2026-06-30T16:50:25.647824+... task_started             B                  reg              task_id=PI-220339-003 | action=register | entity=田中 裕子
+2026-06-30T16:50:36.554039+... clipboard_copy           B                  reg              target_app= | content=田中 裕子
+2026-06-30T16:50:36.563698+... clipboard_paste          B                  reg              target_app=excel | content=
+2026-06-30T16:51:04.396747+... process_switched_out     B                  reg              from=B | to=E
+2026-06-30T16:51:04.401310+... process_started          E                                   code=E | name=入社照合・手当確認 | case=OB-220339-002
+2026-06-30T16:51:04.402456+... task_started             E                                   task_id=OB-220339-002 | action=complete | entity=鈴木 美咲
+2026-06-30T16:51:14.159763+... clipboard_copy           E                                   target_app= | content=鈴木 美咲
+2026-06-30T16:51:14.163224+... clipboard_paste          E                                   target_app=excel | content=
+2026-06-30T16:51:20.445366+... clipboard_paste          E                                   target_app=notepad | content=
+2026-06-30T16:51:28.548000+... process_started          E                                   code=E | name=入社照合・手当確認 | case=OB-220339-003
+2026-06-30T16:51:28.553489+... task_started             E                                   task_id=OB-220339-003 | action=flag | entity=岩田 浩二
+2026-06-30T16:51:36.907151+... clipboard_copy           E                                   target_app= | content=岩田 浩二
+2026-06-30T16:51:36.909443+... clipboard_paste          E                                   target_app=excel | content=
+2026-06-30T16:51:47.735733+... clipboard_paste          E                                   target_app=notepad | content=
+2026-06-30T16:51:54.395762+... process_switched_out     E                                   from=E | to=B
+2026-06-30T16:51:54.397871+... process_resumed          B                  adj              process=B | split_id=M1-B-split-1 | phase=2
+2026-06-30T16:51:54.398923+... task_started             B                  adj              task_id=PI-220339-004 | action=register | entity=渡辺 英二
+2026-06-30T16:52:03.625591+... clipboard_copy           B                  adj              target_app= | content=渡辺 英二
+2026-06-30T16:52:03.634419+... clipboard_paste          B                  adj              target_app=excel | content=
+2026-06-30T16:52:11.304184+... clipboard_paste          B                  adj              target_app=notepad | content=
+2026-06-30T16:52:19.680560+... process_switched_out     B                  adj              from=B | to=A
+2026-06-30T16:52:19.682409+... process_resumed          A                  std              process=A | split_id=M1-A-split-1 | phase=2
+2026-06-30T16:52:19.683294+... task_started             A                  std              task_id=RT-220339-003 | action=confirm | entity=伊藤 花子
+2026-06-30T16:52:27.700361+... clipboard_copy           A                  std              target_app= | content=伊藤 花子
+2026-06-30T16:52:27.703069+... clipboard_paste          A                  std              target_app=excel | content=
+2026-06-30T16:52:39.911202+... clipboard_paste          A                  std              target_app=notepad | content=
+2026-06-30T16:53:22.541276+... process_resumed          A                  exc              process=A | split_id=M1-A-split-1 | phase=2
+2026-06-30T16:53:22.545926+... task_started             A                  exc              task_id=RT-220339-004 | action=query | entity=山田 太郎
+2026-06-30T16:53:31.995355+... clipboard_copy           A                  exc              target_app= | content=山田 太郎
+2026-06-30T16:53:32.002865+... clipboard_paste          A                  exc              target_app=excel | content=
+2026-06-30T16:53:42.783196+... clipboard_paste          A                  exc              target_app=notepad | content=
+2026-06-30T16:54:26.415021+... process_switched_out     A                  exc              from=A | to=M
+2026-06-30T16:54:26.420139+... process_started          M                                   code=M | name=仕入先連絡 | case=SUP-220339-003
+2026-06-30T16:54:26.423037+... task_started             M                                   task_id=SUP-220339-003 | action=approve | entity=大阪部品工業
+2026-06-30T16:54:42.654194+... clipboard_copy           M                                   target_app= | content=Supplier_List.docx
+2026-06-30T16:54:57.767816+... clipboard_paste          M                                   target_app=notepad | content=
+2026-06-30T16:55:28.855784+... session_ended            M                                   tasks=31 | duration=1266.9s
+
+====================================================================================================
+GT records displayed: 169
+====================================================================================================
