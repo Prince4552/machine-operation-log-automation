@@ -1,0 +1,4728 @@
+[
+  {
+    "dataset": "Dataset A",
+    "path": "P:\\I'm beside you\\operation-log-automation\\data\\dataset_a",
+    "sessions": 63,
+    "total_chunks": 133,
+    "total_events": 162768,
+    "avg_chunks_per_session": 2.111111111111111,
+    "min_chunks_per_session": 1,
+    "max_chunks_per_session": 4,
+    "avg_events_per_session": 2583.6190476190477,
+    "min_events_per_session": 945,
+    "max_events_per_session": 3773,
+    "event_types": {
+      "session_start": 63,
+      "app_switch": 50588,
+      "screenshot_smart": 34580,
+      "mouse_click": 6177,
+      "keystroke": 38717,
+      "window_title_change": 451,
+      "shortcut": 13668,
+      "mouse_scroll": 3180,
+      "clipboard_change": 5198,
+      "window_state_change": 232,
+      "text_input_complete": 118,
+      "upload_started": 53,
+      "upload_completed": 46,
+      "session_end": 61,
+      "browser_navigation": 1725,
+      "browser_click": 5365,
+      "browser_form_input": 1805,
+      "dialog_opened": 28,
+      "dialog_closed": 28,
+      "browser_alert": 137,
+      "extension_disconnected": 172,
+      "extension_connected": 54,
+      "browser_tab_event": 103,
+      "mouse_double_click": 10,
+      "upload_failed": 5,
+      "mouse_drag_drop": 4,
+      "browser_error": 200
+    },
+    "layers": {
+      "SYSTEM": 454,
+      "L2": 118399,
+      "L1": 34580,
+      "L3": 9335
+    },
+    "sessions_detail": [
+      {
+        "session_id": "ses_20260630-121953-LAPTOP-R36BQBTE",
+        "chunks": 4,
+        "events": 2348,
+        "start": "2026-06-30T12:19:53.821000Z",
+        "end": "2026-06-30T12:45:08.101000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 2,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 671,
+          "screenshot_smart": 466,
+          "mouse_click": 104,
+          "keystroke": 788,
+          "window_title_change": 11,
+          "shortcut": 236,
+          "mouse_scroll": 20,
+          "clipboard_change": 40,
+          "window_state_change": 2,
+          "text_input_complete": 6,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 1878,
+          "L1": 466
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1200",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_1230",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1200-LAPTOP-R36BQBTE",
+            "events": 1116,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1230-LAPTOP-R36BQBTE",
+            "events": 1232,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-124826-CHAITANYA0BCF",
+        "chunks": 4,
+        "events": 3163,
+        "start": "2026-06-30T12:48:26.691000Z",
+        "end": "2026-06-30T13:11:23.292000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 2,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 1044,
+          "screenshot_smart": 626,
+          "keystroke": 744,
+          "mouse_click": 110,
+          "browser_navigation": 34,
+          "browser_click": 107,
+          "window_state_change": 3,
+          "window_title_change": 7,
+          "shortcut": 227,
+          "mouse_scroll": 89,
+          "clipboard_change": 119,
+          "browser_form_input": 36,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "browser_alert": 4,
+          "text_input_complete": 4,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2349,
+          "L1": 626,
+          "L3": 181
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1230",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_1300",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1230-CHAITANYA0BCF",
+            "events": 1464,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1300-CHAITANYA0BCF",
+            "events": 1699,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-125757-LAPTOP-R36BQBTE",
+        "chunks": 4,
+        "events": 1799,
+        "start": "2026-06-30T12:57:57.404000Z",
+        "end": "2026-06-30T13:17:23.917000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 2,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 688,
+          "screenshot_smart": 355,
+          "mouse_click": 81,
+          "keystroke": 436,
+          "window_title_change": 8,
+          "shortcut": 177,
+          "window_state_change": 3,
+          "mouse_scroll": 9,
+          "clipboard_change": 38,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 1440,
+          "L1": 355
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1230",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_1300",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1230-LAPTOP-R36BQBTE",
+            "events": 160,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1300-LAPTOP-R36BQBTE",
+            "events": 1639,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-131729-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2198,
+        "start": "2026-06-30T13:17:29.721000Z",
+        "end": "2026-06-30T13:37:05.350000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 726,
+          "screenshot_smart": 464,
+          "mouse_click": 88,
+          "keystroke": 446,
+          "browser_navigation": 19,
+          "browser_click": 84,
+          "shortcut": 176,
+          "window_state_change": 4,
+          "clipboard_change": 91,
+          "window_title_change": 8,
+          "mouse_scroll": 52,
+          "browser_form_input": 28,
+          "extension_connected": 1,
+          "browser_tab_event": 2,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1591,
+          "L1": 464,
+          "L3": 134
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260630-1300-CHAITANYA0BCF",
+            "events": 1499,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1330-CHAITANYA0BCF",
+            "events": 699,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-132737-LAPTOP-R36BQBTE",
+        "chunks": 4,
+        "events": 2025,
+        "start": "2026-06-30T13:27:37.277000Z",
+        "end": "2026-06-30T13:49:01.526000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 2,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 674,
+          "screenshot_smart": 398,
+          "mouse_click": 84,
+          "keystroke": 584,
+          "window_title_change": 12,
+          "shortcut": 211,
+          "clipboard_change": 41,
+          "window_state_change": 3,
+          "upload_started": 1,
+          "mouse_scroll": 12,
+          "upload_completed": 1,
+          "text_input_complete": 2,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 1623,
+          "L1": 398
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1300",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_1330",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1300-LAPTOP-R36BQBTE",
+            "events": 214,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1330-LAPTOP-R36BQBTE",
+            "events": 1811,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-135201-LAPTOP-R36BQBTE",
+        "chunks": 4,
+        "events": 2020,
+        "start": "2026-06-30T13:52:01.354000Z",
+        "end": "2026-06-30T14:18:23.017000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 2,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 691,
+          "screenshot_smart": 406,
+          "mouse_click": 87,
+          "keystroke": 572,
+          "window_title_change": 10,
+          "shortcut": 197,
+          "clipboard_change": 39,
+          "window_state_change": 4,
+          "mouse_scroll": 8,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "text_input_complete": 2,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 1610,
+          "L1": 406
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1330",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_1400",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1330-LAPTOP-R36BQBTE",
+            "events": 596,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1400-LAPTOP-R36BQBTE",
+            "events": 1424,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-135451-CHAITANYA0BCF",
+        "chunks": 3,
+        "events": 3099,
+        "start": "2026-06-30T13:54:51.177000Z",
+        "end": "2026-06-30T14:15:58.910000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 1,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 991,
+          "screenshot_smart": 634,
+          "keystroke": 748,
+          "mouse_click": 110,
+          "browser_navigation": 27,
+          "browser_click": 107,
+          "shortcut": 240,
+          "clipboard_change": 125,
+          "mouse_scroll": 57,
+          "browser_form_input": 35,
+          "window_state_change": 7,
+          "window_title_change": 4,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "mouse_double_click": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2287,
+          "L1": 634,
+          "L3": 171
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1330",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1330-CHAITANYA0BCF",
+            "events": 714,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1400-CHAITANYA0BCF",
+            "events": 2385,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-145433-JAYESH",
+        "chunks": 3,
+        "events": 3379,
+        "start": "2026-06-30T14:54:33.445000Z",
+        "end": "2026-06-30T15:18:37.012000Z",
+        "machine_ids": [
+          "JAYESH"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 1,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 992,
+          "screenshot_smart": 724,
+          "browser_navigation": 66,
+          "browser_click": 115,
+          "mouse_click": 116,
+          "shortcut": 273,
+          "keystroke": 834,
+          "clipboard_change": 137,
+          "mouse_scroll": 57,
+          "browser_form_input": 39,
+          "window_state_change": 3,
+          "window_title_change": 8,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "browser_alert": 4,
+          "text_input_complete": 4,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2424,
+          "L1": 724,
+          "L3": 224
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1430",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1430-JAYESH",
+            "events": 772,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1500-JAYESH",
+            "events": 2607,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-163424-SIDDHIGUPTAB00B",
+        "chunks": 3,
+        "events": 2483,
+        "start": "2026-06-30T16:34:24.194000Z",
+        "end": "2026-06-30T17:00:13.147000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 1,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "mouse_scroll": 89,
+          "screenshot_smart": 534,
+          "app_switch": 681,
+          "mouse_click": 99,
+          "window_state_change": 6,
+          "browser_navigation": 29,
+          "browser_click": 93,
+          "shortcut": 222,
+          "keystroke": 574,
+          "clipboard_change": 108,
+          "browser_form_input": 31,
+          "window_title_change": 7,
+          "upload_failed": 3,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 1788,
+          "L1": 534,
+          "L3": 153
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_1630",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1630-SIDDHIGUPTAB00B",
+            "events": 2481,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1700-SIDDHIGUPTAB00B",
+            "events": 2,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260630-164418-MSI",
+        "chunks": 2,
+        "events": 2848,
+        "start": "2026-06-30T16:44:18.982000Z",
+        "end": "2026-06-30T17:09:40.061000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 959,
+          "screenshot_smart": 602,
+          "shortcut": 237,
+          "keystroke": 574,
+          "extension_connected": 3,
+          "browser_navigation": 34,
+          "browser_tab_event": 6,
+          "window_title_change": 12,
+          "browser_click": 99,
+          "mouse_click": 100,
+          "clipboard_change": 117,
+          "mouse_scroll": 60,
+          "browser_form_input": 33,
+          "window_state_change": 4,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "text_input_complete": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 2064,
+          "L1": 602,
+          "L3": 172
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260630-1630-MSI",
+            "events": 2072,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260630-1700-MSI",
+            "events": 776,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-005920-yuvraj",
+        "chunks": 2,
+        "events": 2641,
+        "start": "2026-07-01T00:59:20.021000Z",
+        "end": "2026-07-01T01:28:07.978000Z",
+        "machine_ids": [
+          "yuvraj"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 788,
+          "screenshot_smart": 592,
+          "browser_navigation": 39,
+          "browser_click": 104,
+          "upload_started": 1,
+          "mouse_click": 113,
+          "upload_completed": 1,
+          "shortcut": 220,
+          "keystroke": 558,
+          "mouse_scroll": 63,
+          "browser_form_input": 34,
+          "window_state_change": 6,
+          "clipboard_change": 77,
+          "window_title_change": 22,
+          "extension_connected": 2,
+          "browser_alert": 1,
+          "browser_tab_event": 9,
+          "extension_disconnected": 1,
+          "mouse_double_click": 7,
+          "mouse_drag_drop": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1855,
+          "L1": 592,
+          "L3": 187
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0030-yuvraj",
+            "events": 3,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0100-yuvraj",
+            "events": 2638,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-014804-yuvraj",
+        "chunks": 2,
+        "events": 2750,
+        "start": "2026-07-01T01:48:04.380000Z",
+        "end": "2026-07-01T02:20:24.200000Z",
+        "machine_ids": [
+          "yuvraj"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 893,
+          "screenshot_smart": 587,
+          "browser_navigation": 32,
+          "browser_click": 106,
+          "mouse_click": 115,
+          "shortcut": 205,
+          "keystroke": 596,
+          "clipboard_change": 88,
+          "mouse_scroll": 51,
+          "browser_form_input": 35,
+          "browser_alert": 3,
+          "text_input_complete": 5,
+          "window_state_change": 3,
+          "window_title_change": 12,
+          "extension_connected": 2,
+          "browser_tab_event": 8,
+          "extension_disconnected": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "mouse_double_click": 2,
+          "mouse_drag_drop": 2,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1972,
+          "L1": 587,
+          "L3": 184
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0130-yuvraj",
+            "events": 1248,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0200-yuvraj",
+            "events": 1502,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-022828-yuvraj",
+        "chunks": 2,
+        "events": 2335,
+        "start": "2026-07-01T02:28:28.374000Z",
+        "end": "2026-07-01T02:49:44.103000Z",
+        "machine_ids": [
+          "yuvraj"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 735,
+          "screenshot_smart": 475,
+          "browser_navigation": 28,
+          "browser_click": 90,
+          "mouse_click": 91,
+          "shortcut": 157,
+          "keystroke": 586,
+          "clipboard_change": 79,
+          "mouse_scroll": 37,
+          "browser_form_input": 31,
+          "upload_started": 1,
+          "window_state_change": 2,
+          "upload_completed": 1,
+          "window_title_change": 5,
+          "browser_alert": 7,
+          "text_input_complete": 6,
+          "extension_connected": 1,
+          "extension_disconnected": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 6,
+          "L2": 1698,
+          "L1": 475,
+          "L3": 156
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0200-yuvraj",
+            "events": 58,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0230-yuvraj",
+            "events": 2277,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-030836-yuvraj",
+        "chunks": 2,
+        "events": 2106,
+        "start": "2026-07-01T03:08:36.377000Z",
+        "end": "2026-07-01T03:31:04.499000Z",
+        "machine_ids": [
+          "yuvraj"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 653,
+          "screenshot_smart": 441,
+          "browser_navigation": 26,
+          "browser_click": 86,
+          "mouse_click": 87,
+          "shortcut": 151,
+          "keystroke": 508,
+          "window_state_change": 3,
+          "clipboard_change": 63,
+          "window_title_change": 4,
+          "mouse_scroll": 37,
+          "browser_form_input": 29,
+          "browser_alert": 5,
+          "text_input_complete": 4,
+          "dialog_opened": 2,
+          "dialog_closed": 2,
+          "extension_connected": 1,
+          "extension_disconnected": 1,
+          "upload_started": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 5,
+          "L2": 1514,
+          "L1": 441,
+          "L3": 146
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0300-yuvraj",
+            "events": 2100,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0330-yuvraj",
+            "events": 6,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-032825-CHAITANYA0BCF",
+        "chunks": 3,
+        "events": 2560,
+        "start": "2026-07-01T03:28:25.360000Z",
+        "end": "2026-07-01T03:52:26.068000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 1,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 801,
+          "screenshot_smart": 541,
+          "mouse_click": 93,
+          "keystroke": 588,
+          "browser_navigation": 26,
+          "browser_click": 91,
+          "window_state_change": 5,
+          "shortcut": 208,
+          "mouse_scroll": 48,
+          "clipboard_change": 109,
+          "upload_started": 1,
+          "window_title_change": 7,
+          "upload_completed": 1,
+          "browser_form_input": 29,
+          "extension_connected": 1,
+          "browser_tab_event": 2,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1861,
+          "L1": 541,
+          "L3": 149
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_0300",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0300-CHAITANYA0BCF",
+            "events": 126,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0330-CHAITANYA0BCF",
+            "events": 2434,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-035622-SIDDHIGUPTAB00B",
+        "chunks": 3,
+        "events": 2964,
+        "start": "2026-07-01T03:56:22.434000Z",
+        "end": "2026-07-01T04:24:24.794000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 1,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 880,
+          "mouse_click": 120,
+          "screenshot_smart": 676,
+          "keystroke": 664,
+          "text_input_complete": 2,
+          "extension_connected": 3,
+          "browser_navigation": 33,
+          "browser_tab_event": 6,
+          "window_state_change": 9,
+          "browser_click": 103,
+          "shortcut": 238,
+          "mouse_scroll": 53,
+          "clipboard_change": 120,
+          "browser_form_input": 34,
+          "window_title_change": 8,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "dialog_opened": 4,
+          "dialog_closed": 4,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 2102,
+          "L1": 676,
+          "L3": 176
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_0330",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0330-SIDDHIGUPTAB00B",
+            "events": 261,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0400-SIDDHIGUPTAB00B",
+            "events": 2703,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-043922-SIDDHIGUPTAB00B",
+        "chunks": 3,
+        "events": 3115,
+        "start": "2026-07-01T04:39:22.341000Z",
+        "end": "2026-07-01T05:17:39.318000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 1,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 1238,
+          "mouse_click": 40,
+          "screenshot_smart": 684,
+          "window_state_change": 7,
+          "browser_navigation": 42,
+          "browser_click": 33,
+          "shortcut": 249,
+          "keystroke": 666,
+          "clipboard_change": 110,
+          "mouse_scroll": 19,
+          "browser_form_input": 11,
+          "window_title_change": 5,
+          "dialog_opened": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "dialog_closed": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2338,
+          "L1": 684,
+          "L3": 86
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_0430",
+            "events": 0,
+            "screenshots_present": true,
+            "events_file_missing": true,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0430-SIDDHIGUPTAB00B",
+            "events": 1772,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0500-SIDDHIGUPTAB00B",
+            "events": 1343,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-051820-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2195,
+        "start": "2026-07-01T05:18:20.677000Z",
+        "end": "2026-07-01T05:37:09.923000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 654,
+          "keystroke": 538,
+          "screenshot_smart": 461,
+          "mouse_click": 84,
+          "browser_navigation": 22,
+          "browser_click": 81,
+          "window_title_change": 7,
+          "window_state_change": 4,
+          "shortcut": 171,
+          "clipboard_change": 85,
+          "mouse_scroll": 49,
+          "browser_form_input": 28,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1594,
+          "L1": 461,
+          "L3": 133
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0500-CHAITANYA0BCF",
+            "events": 1447,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0530-CHAITANYA0BCF",
+            "events": 748,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-051850-LAPTOP-R36BQBTE",
+        "chunks": 2,
+        "events": 2500,
+        "start": "2026-07-01T05:18:50.953000Z",
+        "end": "2026-07-01T05:46:58.661000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 868,
+          "screenshot_smart": 503,
+          "keystroke": 688,
+          "mouse_click": 108,
+          "window_title_change": 5,
+          "window_state_change": 3,
+          "shortcut": 245,
+          "clipboard_change": 50,
+          "mouse_scroll": 24,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 1993,
+          "L1": 503
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0500-LAPTOP-R36BQBTE",
+            "events": 1221,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0530-LAPTOP-R36BQBTE",
+            "events": 1279,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-053005-MSI",
+        "chunks": 1,
+        "events": 2682,
+        "start": "2026-07-01T05:30:05.181000Z",
+        "end": "2026-07-01T05:51:48.234000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 647,
+          "screenshot_smart": 573,
+          "keystroke": 713,
+          "window_title_change": 9,
+          "extension_connected": 4,
+          "browser_tab_event": 8,
+          "browser_navigation": 35,
+          "browser_click": 101,
+          "mouse_click": 101,
+          "shortcut": 240,
+          "clipboard_change": 117,
+          "mouse_scroll": 80,
+          "browser_form_input": 34,
+          "window_state_change": 6,
+          "browser_alert": 3,
+          "extension_disconnected": 4,
+          "text_input_complete": 3,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 1918,
+          "L1": 573,
+          "L3": 181
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0530-MSI",
+            "events": 2682,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-053720-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 3009,
+        "start": "2026-07-01T05:37:20.510000Z",
+        "end": "2026-07-01T06:03:06.632000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 849,
+          "mouse_click": 113,
+          "screenshot_smart": 628,
+          "browser_navigation": 39,
+          "browser_click": 111,
+          "shortcut": 230,
+          "keystroke": 790,
+          "clipboard_change": 121,
+          "mouse_scroll": 55,
+          "browser_form_input": 39,
+          "window_state_change": 4,
+          "window_title_change": 12,
+          "browser_alert": 6,
+          "text_input_complete": 6,
+          "upload_started": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 6,
+          "L2": 2180,
+          "L1": 628,
+          "L3": 195
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0530-SIDDHIGUPTAB00B",
+            "events": 2753,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0600-SIDDHIGUPTAB00B",
+            "events": 256,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-054901-LAPTOP-R36BQBTE",
+        "chunks": 2,
+        "events": 2417,
+        "start": "2026-07-01T05:49:01.927000Z",
+        "end": "2026-07-01T06:18:43.973000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 898,
+          "screenshot_smart": 500,
+          "keystroke": 606,
+          "mouse_click": 97,
+          "window_title_change": 9,
+          "shortcut": 239,
+          "clipboard_change": 34,
+          "window_state_change": 4,
+          "mouse_scroll": 24,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 1913,
+          "L1": 500
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0530-LAPTOP-R36BQBTE",
+            "events": 1223,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0600-LAPTOP-R36BQBTE",
+            "events": 1194,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-054930-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2626,
+        "start": "2026-07-01T05:49:30.898000Z",
+        "end": "2026-07-01T06:10:30.994000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 801,
+          "screenshot_smart": 498,
+          "keystroke": 574,
+          "mouse_click": 89,
+          "browser_navigation": 24,
+          "browser_click": 86,
+          "shortcut": 191,
+          "clipboard_change": 98,
+          "mouse_scroll": 42,
+          "browser_form_input": 29,
+          "window_state_change": 3,
+          "window_title_change": 4,
+          "browser_alert": 3,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "extension_connected": 1,
+          "browser_tab_event": 3,
+          "extension_disconnected": 4,
+          "upload_completed": 1,
+          "browser_error": 170,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1804,
+          "L1": 498,
+          "L3": 315
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0530-CHAITANYA0BCF",
+            "events": 1502,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0600-CHAITANYA0BCF",
+            "events": 1124,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-055037-Marcos",
+        "chunks": 2,
+        "events": 2487,
+        "start": "2026-07-01T05:50:37.051000Z",
+        "end": "2026-07-01T06:14:16.905000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 798,
+          "screenshot_smart": 544,
+          "mouse_click": 93,
+          "browser_navigation": 24,
+          "browser_click": 90,
+          "shortcut": 224,
+          "keystroke": 570,
+          "clipboard_change": 57,
+          "mouse_scroll": 39,
+          "browser_form_input": 30,
+          "window_state_change": 2,
+          "window_title_change": 9,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1792,
+          "L1": 544,
+          "L3": 144
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0530-Marcos",
+            "events": 1009,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0600-Marcos",
+            "events": 1478,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-055918-MSI",
+        "chunks": 2,
+        "events": 2883,
+        "start": "2026-07-01T05:59:18.567000Z",
+        "end": "2026-07-01T06:22:20.938000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 940,
+          "screenshot_smart": 611,
+          "keystroke": 630,
+          "window_title_change": 9,
+          "extension_connected": 4,
+          "browser_tab_event": 5,
+          "browser_navigation": 33,
+          "upload_started": 1,
+          "browser_click": 101,
+          "mouse_click": 101,
+          "upload_completed": 1,
+          "shortcut": 234,
+          "window_state_change": 3,
+          "clipboard_change": 117,
+          "mouse_scroll": 48,
+          "browser_form_input": 34,
+          "browser_alert": 3,
+          "text_input_complete": 2,
+          "extension_disconnected": 4,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 12,
+          "L2": 2084,
+          "L1": 611,
+          "L3": 176
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0530-MSI",
+            "events": 47,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0600-MSI",
+            "events": 2836,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-062250-Marcos",
+        "chunks": 2,
+        "events": 2643,
+        "start": "2026-07-01T06:22:50.558000Z",
+        "end": "2026-07-01T06:44:10.651000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 828,
+          "screenshot_smart": 588,
+          "mouse_click": 105,
+          "browser_navigation": 30,
+          "browser_click": 102,
+          "shortcut": 231,
+          "keystroke": 586,
+          "clipboard_change": 65,
+          "mouse_scroll": 53,
+          "browser_form_input": 34,
+          "window_state_change": 4,
+          "window_title_change": 10,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1882,
+          "L1": 588,
+          "L3": 166
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0600-Marcos",
+            "events": 942,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0630-Marcos",
+            "events": 1701,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-062732-MSI",
+        "chunks": 2,
+        "events": 2640,
+        "start": "2026-07-01T06:27:32.080000Z",
+        "end": "2026-07-01T06:49:52.856000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 692,
+          "screenshot_smart": 577,
+          "keystroke": 660,
+          "window_title_change": 12,
+          "extension_connected": 4,
+          "browser_navigation": 31,
+          "browser_tab_event": 6,
+          "browser_click": 101,
+          "mouse_click": 101,
+          "shortcut": 236,
+          "clipboard_change": 117,
+          "mouse_scroll": 54,
+          "browser_form_input": 34,
+          "window_state_change": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "browser_alert": 3,
+          "extension_disconnected": 4,
+          "text_input_complete": 2,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 12,
+          "L2": 1876,
+          "L1": 577,
+          "L3": 175
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0600-MSI",
+            "events": 300,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0630-MSI",
+            "events": 2340,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-063106-LAPTOP-R36BQBTE",
+        "chunks": 1,
+        "events": 2106,
+        "start": "2026-07-01T06:31:06.557000Z",
+        "end": "2026-07-01T06:52:34.654000Z",
+        "machine_ids": [
+          "LAPTOP-R36BQBTE"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 728,
+          "screenshot_smart": 408,
+          "keystroke": 630,
+          "mouse_click": 89,
+          "window_title_change": 6,
+          "shortcut": 193,
+          "clipboard_change": 27,
+          "window_state_change": 4,
+          "mouse_scroll": 16,
+          "text_input_complete": 4
+        },
+        "layers": {
+          "SYSTEM": 1,
+          "L2": 1697,
+          "L1": 408
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0630-LAPTOP-R36BQBTE",
+            "events": 2106,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-065151-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 3312,
+        "start": "2026-07-01T06:51:51.427000Z",
+        "end": "2026-07-01T07:16:56.225000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 1064,
+          "screenshot_smart": 666,
+          "mouse_click": 119,
+          "keystroke": 812,
+          "browser_navigation": 33,
+          "browser_click": 116,
+          "shortcut": 256,
+          "mouse_scroll": 56,
+          "clipboard_change": 124,
+          "browser_form_input": 38,
+          "window_state_change": 4,
+          "browser_alert": 4,
+          "window_title_change": 6,
+          "text_input_complete": 4,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "upload_started": 1,
+          "upload_failed": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 2447,
+          "L1": 666,
+          "L3": 191
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0630-CHAITANYA0BCF",
+            "events": 995,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0700-CHAITANYA0BCF",
+            "events": 2317,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-070320-JAYESH",
+        "chunks": 1,
+        "events": 3773,
+        "start": "2026-07-01T07:03:20.759000Z",
+        "end": "2026-07-01T07:29:56.251000Z",
+        "machine_ids": [
+          "JAYESH"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 1173,
+          "screenshot_smart": 782,
+          "browser_navigation": 109,
+          "browser_click": 128,
+          "mouse_click": 130,
+          "shortcut": 293,
+          "keystroke": 810,
+          "clipboard_change": 151,
+          "mouse_scroll": 67,
+          "browser_form_input": 44,
+          "window_state_change": 4,
+          "window_title_change": 9,
+          "dialog_opened": 2,
+          "dialog_closed": 2,
+          "extension_connected": 1,
+          "browser_tab_event": 4,
+          "browser_error": 30,
+          "browser_alert": 26,
+          "extension_disconnected": 4,
+          "text_input_complete": 2,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2643,
+          "L1": 782,
+          "L3": 341
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0700-JAYESH",
+            "events": 3773,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-071849-Marcos",
+        "chunks": 2,
+        "events": 2360,
+        "start": "2026-07-01T07:18:49.937000Z",
+        "end": "2026-07-01T07:41:08.822000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 753,
+          "screenshot_smart": 518,
+          "mouse_click": 93,
+          "browser_navigation": 24,
+          "browser_click": 90,
+          "shortcut": 202,
+          "keystroke": 524,
+          "clipboard_change": 57,
+          "mouse_scroll": 50,
+          "browser_form_input": 30,
+          "window_title_change": 9,
+          "window_state_change": 3,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1691,
+          "L1": 518,
+          "L3": 144
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0700-Marcos",
+            "events": 944,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0730-Marcos",
+            "events": 1416,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-072319-MSI",
+        "chunks": 2,
+        "events": 2739,
+        "start": "2026-07-01T07:23:19.696000Z",
+        "end": "2026-07-01T07:49:24.588000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 810,
+          "screenshot_smart": 596,
+          "keystroke": 634,
+          "extension_connected": 3,
+          "browser_tab_event": 5,
+          "browser_navigation": 31,
+          "window_title_change": 10,
+          "browser_click": 101,
+          "mouse_click": 101,
+          "shortcut": 233,
+          "clipboard_change": 117,
+          "mouse_scroll": 51,
+          "browser_form_input": 35,
+          "window_state_change": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 1959,
+          "L1": 596,
+          "L3": 174
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0700-MSI",
+            "events": 789,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0730-MSI",
+            "events": 1950,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-072435-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2902,
+        "start": "2026-07-01T07:24:35.424000Z",
+        "end": "2026-07-01T07:48:13.183000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 866,
+          "screenshot_smart": 616,
+          "keystroke": 702,
+          "mouse_click": 109,
+          "browser_navigation": 29,
+          "browser_click": 107,
+          "shortcut": 247,
+          "clipboard_change": 120,
+          "mouse_scroll": 56,
+          "browser_form_input": 35,
+          "window_state_change": 4,
+          "window_title_change": 3,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "mouse_drag_drop": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2108,
+          "L1": 616,
+          "L3": 171
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0700-CHAITANYA0BCF",
+            "events": 762,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0730-CHAITANYA0BCF",
+            "events": 2140,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-074424-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 2564,
+        "start": "2026-07-01T07:44:24.948000Z",
+        "end": "2026-07-01T08:08:12.466000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "mouse_click": 101,
+          "app_switch": 637,
+          "screenshot_smart": 551,
+          "window_state_change": 6,
+          "browser_navigation": 30,
+          "browser_click": 95,
+          "shortcut": 210,
+          "keystroke": 626,
+          "mouse_scroll": 145,
+          "clipboard_change": 108,
+          "browser_form_input": 32,
+          "window_title_change": 5,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "browser_alert": 3,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "extension_connected": 1,
+          "browser_tab_event": 2,
+          "extension_disconnected": 4,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1842,
+          "L1": 551,
+          "L3": 162
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0730-SIDDHIGUPTAB00B",
+            "events": 1775,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0800-SIDDHIGUPTAB00B",
+            "events": 789,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-075548-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 1795,
+        "start": "2026-07-01T07:55:48.056000Z",
+        "end": "2026-07-01T08:10:24.578000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 534,
+          "screenshot_smart": 379,
+          "keystroke": 404,
+          "mouse_click": 75,
+          "window_state_change": 4,
+          "browser_navigation": 17,
+          "browser_click": 72,
+          "shortcut": 153,
+          "clipboard_change": 79,
+          "mouse_scroll": 42,
+          "browser_form_input": 24,
+          "window_title_change": 5,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1296,
+          "L1": 379,
+          "L3": 113
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0730-CHAITANYA0BCF",
+            "events": 583,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0800-CHAITANYA0BCF",
+            "events": 1212,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-075604-LAPTOP-0IM1OHQH",
+        "chunks": 2,
+        "events": 2343,
+        "start": "2026-07-01T07:56:04.438000Z",
+        "end": "2026-07-01T08:15:44.592000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 636,
+          "mouse_click": 98,
+          "screenshot_smart": 515,
+          "browser_navigation": 28,
+          "browser_click": 95,
+          "shortcut": 219,
+          "keystroke": 600,
+          "mouse_scroll": 53,
+          "clipboard_change": 46,
+          "browser_form_input": 33,
+          "window_state_change": 2,
+          "window_title_change": 7,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1663,
+          "L1": 515,
+          "L3": 158
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0730-LAPTOP-0IM1OHQH",
+            "events": 450,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0800-LAPTOP-0IM1OHQH",
+            "events": 1893,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-081120-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 2336,
+        "start": "2026-07-01T08:11:20.537000Z",
+        "end": "2026-07-01T08:58:08.335000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 617,
+          "screenshot_smart": 523,
+          "mouse_click": 97,
+          "window_state_change": 2,
+          "browser_navigation": 34,
+          "browser_click": 94,
+          "shortcut": 209,
+          "keystroke": 554,
+          "clipboard_change": 103,
+          "mouse_scroll": 51,
+          "browser_form_input": 31,
+          "window_title_change": 9,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_connected": 1,
+          "browser_tab_event": 2,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1642,
+          "L1": 523,
+          "L3": 162
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0800-SIDDHIGUPTAB00B",
+            "events": 561,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0830-SIDDHIGUPTAB00B",
+            "events": 1775,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-081732-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2169,
+        "start": "2026-07-01T08:17:32.141000Z",
+        "end": "2026-07-01T08:36:54.968000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 641,
+          "screenshot_smart": 460,
+          "mouse_click": 83,
+          "keystroke": 530,
+          "browser_navigation": 25,
+          "browser_click": 80,
+          "shortcut": 173,
+          "mouse_scroll": 44,
+          "clipboard_change": 88,
+          "browser_form_input": 27,
+          "window_state_change": 2,
+          "window_title_change": 5,
+          "upload_started": 1,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1568,
+          "L1": 460,
+          "L3": 134
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0800-CHAITANYA0BCF",
+            "events": 1412,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0830-CHAITANYA0BCF",
+            "events": 757,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-083656-LAPTOP-0IM1OHQH",
+        "chunks": 1,
+        "events": 2557,
+        "start": "2026-07-01T08:36:56.616000Z",
+        "end": "2026-07-01T08:56:18.364000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 727,
+          "screenshot_smart": 569,
+          "mouse_click": 107,
+          "window_state_change": 2,
+          "browser_navigation": 29,
+          "browser_click": 104,
+          "shortcut": 237,
+          "keystroke": 650,
+          "mouse_scroll": 44,
+          "clipboard_change": 39,
+          "browser_form_input": 36,
+          "browser_alert": 2,
+          "window_title_change": 4,
+          "text_input_complete": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 5,
+          "L2": 1812,
+          "L1": 569,
+          "L3": 171
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0830-LAPTOP-0IM1OHQH",
+            "events": 2557,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-090300-Marcos",
+        "chunks": 1,
+        "events": 2773,
+        "start": "2026-07-01T09:03:00.724000Z",
+        "end": "2026-07-01T09:28:47.064000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 858,
+          "screenshot_smart": 569,
+          "mouse_click": 101,
+          "browser_navigation": 30,
+          "browser_click": 99,
+          "shortcut": 214,
+          "keystroke": 730,
+          "clipboard_change": 63,
+          "mouse_scroll": 50,
+          "browser_form_input": 34,
+          "window_state_change": 3,
+          "browser_alert": 6,
+          "text_input_complete": 6,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "window_title_change": 3,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 5,
+          "L2": 2030,
+          "L1": 569,
+          "L3": 169
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0900-Marcos",
+            "events": 2773,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-092027-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 2627,
+        "start": "2026-07-01T09:20:27.981000Z",
+        "end": "2026-07-01T09:46:25.494000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 0,
+        "chunks_without_screenshots": 2,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 818,
+          "mouse_click": 106,
+          "screenshot_smart": 584,
+          "window_state_change": 3,
+          "browser_navigation": 30,
+          "browser_click": 103,
+          "shortcut": 217,
+          "keystroke": 560,
+          "mouse_scroll": 49,
+          "clipboard_change": 109,
+          "browser_form_input": 34,
+          "window_title_change": 5,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1869,
+          "L1": 584,
+          "L3": 167
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0900-SIDDHIGUPTAB00B",
+            "events": 1009,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-0930-SIDDHIGUPTAB00B",
+            "events": 1618,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-093900-Marcos",
+        "chunks": 1,
+        "events": 2229,
+        "start": "2026-07-01T09:39:00.252000Z",
+        "end": "2026-07-01T09:58:49.353000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 645,
+          "screenshot_smart": 488,
+          "mouse_click": 86,
+          "browser_navigation": 24,
+          "browser_click": 84,
+          "shortcut": 214,
+          "keystroke": 554,
+          "mouse_scroll": 41,
+          "browser_form_input": 28,
+          "window_state_change": 2,
+          "window_title_change": 5,
+          "clipboard_change": 49,
+          "extension_connected": 1,
+          "browser_alert": 1,
+          "browser_tab_event": 1,
+          "extension_disconnected": 4,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1596,
+          "L1": 488,
+          "L3": 138
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0930-Marcos",
+            "events": 2229,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-095337-LAPTOP-0IM1OHQH",
+        "chunks": 2,
+        "events": 2494,
+        "start": "2026-07-01T09:53:37.095000Z",
+        "end": "2026-07-01T10:22:46.003000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 787,
+          "screenshot_smart": 561,
+          "mouse_click": 99,
+          "window_state_change": 5,
+          "browser_navigation": 26,
+          "browser_click": 96,
+          "shortcut": 225,
+          "keystroke": 568,
+          "clipboard_change": 22,
+          "mouse_scroll": 55,
+          "browser_form_input": 32,
+          "window_title_change": 8,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_connected": 1,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1769,
+          "L1": 561,
+          "L3": 155
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-0930-LAPTOP-0IM1OHQH",
+            "events": 509,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1000-LAPTOP-0IM1OHQH",
+            "events": 1985,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-100550-Marcos",
+        "chunks": 2,
+        "events": 2890,
+        "start": "2026-07-01T10:05:50.981000Z",
+        "end": "2026-07-01T10:33:20.557000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 972,
+          "screenshot_smart": 611,
+          "mouse_click": 109,
+          "browser_navigation": 22,
+          "browser_click": 107,
+          "shortcut": 237,
+          "keystroke": 670,
+          "mouse_scroll": 45,
+          "browser_form_input": 37,
+          "window_state_change": 1,
+          "clipboard_change": 61,
+          "window_title_change": 7,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2104,
+          "L1": 611,
+          "L3": 168
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1000-Marcos",
+            "events": 2435,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1030-Marcos",
+            "events": 455,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-103521-LAPTOP-0IM1OHQH",
+        "chunks": 1,
+        "events": 2606,
+        "start": "2026-07-01T10:35:21.671000Z",
+        "end": "2026-07-01T10:55:57.819000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 871,
+          "screenshot_smart": 571,
+          "mouse_click": 99,
+          "window_state_change": 5,
+          "browser_navigation": 24,
+          "browser_click": 96,
+          "shortcut": 234,
+          "keystroke": 590,
+          "clipboard_change": 15,
+          "mouse_scroll": 58,
+          "browser_form_input": 32,
+          "window_title_change": 2,
+          "dialog_opened": 2,
+          "dialog_closed": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 5,
+          "L2": 1878,
+          "L1": 571,
+          "L3": 152
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1030-LAPTOP-0IM1OHQH",
+            "events": 2606,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-103853-Marcos",
+        "chunks": 2,
+        "events": 2623,
+        "start": "2026-07-01T10:38:53.553000Z",
+        "end": "2026-07-01T11:00:18.565000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 797,
+          "screenshot_smart": 561,
+          "mouse_click": 100,
+          "browser_navigation": 25,
+          "browser_click": 98,
+          "shortcut": 232,
+          "keystroke": 646,
+          "clipboard_change": 50,
+          "mouse_scroll": 63,
+          "browser_form_input": 33,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "window_state_change": 1,
+          "dialog_opened": 2,
+          "dialog_closed": 2,
+          "window_title_change": 3,
+          "upload_started": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 6,
+          "L2": 1898,
+          "L1": 561,
+          "L3": 158
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1030-Marcos",
+            "events": 2611,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1100-Marcos",
+            "events": 12,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-110548-LAPTOP-0IM1OHQH",
+        "chunks": 1,
+        "events": 2226,
+        "start": "2026-07-01T11:05:48.720000Z",
+        "end": "2026-07-01T11:26:45.321000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 711,
+          "mouse_click": 86,
+          "window_state_change": 6,
+          "screenshot_smart": 488,
+          "browser_navigation": 24,
+          "browser_click": 83,
+          "shortcut": 180,
+          "keystroke": 538,
+          "mouse_scroll": 36,
+          "browser_form_input": 28,
+          "clipboard_change": 34,
+          "window_title_change": 3,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 5,
+          "L2": 1596,
+          "L1": 488,
+          "L3": 137
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1100-LAPTOP-0IM1OHQH",
+            "events": 2226,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-110917-Marcos",
+        "chunks": 2,
+        "events": 2441,
+        "start": "2026-07-01T11:09:17.034000Z",
+        "end": "2026-07-01T11:34:14.169000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 694,
+          "screenshot_smart": 524,
+          "mouse_click": 94,
+          "browser_navigation": 25,
+          "browser_click": 92,
+          "shortcut": 219,
+          "keystroke": 630,
+          "mouse_scroll": 60,
+          "clipboard_change": 53,
+          "browser_form_input": 31,
+          "browser_alert": 3,
+          "text_input_complete": 2,
+          "window_state_change": 2,
+          "window_title_change": 2,
+          "extension_connected": 1,
+          "browser_tab_event": 1,
+          "extension_disconnected": 4,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1756,
+          "L1": 524,
+          "L3": 152
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1100-Marcos",
+            "events": 1984,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1130-Marcos",
+            "events": 457,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-115141-SIDDHIGUPTAB00B",
+        "chunks": 3,
+        "events": 3557,
+        "start": "2026-07-01T11:51:41.548000Z",
+        "end": "2026-07-01T12:34:51.897000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 1114,
+          "window_title_change": 5,
+          "screenshot_smart": 756,
+          "mouse_click": 138,
+          "keystroke": 786,
+          "text_input_complete": 2,
+          "extension_connected": 4,
+          "browser_navigation": 37,
+          "browser_tab_event": 8,
+          "window_state_change": 5,
+          "browser_click": 136,
+          "shortcut": 295,
+          "clipboard_change": 156,
+          "mouse_scroll": 59,
+          "browser_form_input": 44,
+          "upload_started": 2,
+          "upload_completed": 1,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 13,
+          "L2": 2562,
+          "L1": 756,
+          "L3": 226
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1130-SIDDHIGUPTAB00B",
+            "events": 766,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1200-SIDDHIGUPTAB00B",
+            "events": 2379,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1230-SIDDHIGUPTAB00B",
+            "events": 412,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-120612-Marcos",
+        "chunks": 1,
+        "events": 2341,
+        "start": "2026-07-01T12:06:12.794000Z",
+        "end": "2026-07-01T12:28:24.431000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 697,
+          "screenshot_smart": 519,
+          "mouse_click": 93,
+          "browser_navigation": 27,
+          "browser_click": 90,
+          "shortcut": 218,
+          "keystroke": 540,
+          "clipboard_change": 41,
+          "mouse_scroll": 75,
+          "browser_form_input": 30,
+          "window_state_change": 1,
+          "window_title_change": 5,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 5,
+          "L2": 1670,
+          "L1": 519,
+          "L3": 147
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1200-Marcos",
+            "events": 2341,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-120828-LAPTOP-0IM1OHQH",
+        "chunks": 2,
+        "events": 2346,
+        "start": "2026-07-01T12:08:28.693000Z",
+        "end": "2026-07-01T12:30:43.397000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 662,
+          "screenshot_smart": 545,
+          "mouse_click": 96,
+          "window_state_change": 7,
+          "browser_navigation": 29,
+          "browser_click": 93,
+          "shortcut": 227,
+          "keystroke": 556,
+          "mouse_scroll": 48,
+          "browser_form_input": 31,
+          "clipboard_change": 37,
+          "window_title_change": 4,
+          "extension_connected": 1,
+          "browser_tab_event": 2,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "upload_started": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 1637,
+          "L1": 545,
+          "L3": 156
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1200-LAPTOP-0IM1OHQH",
+            "events": 2283,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1230-LAPTOP-0IM1OHQH",
+            "events": 63,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-123729-Marcos",
+        "chunks": 2,
+        "events": 2577,
+        "start": "2026-07-01T12:37:29.139000Z",
+        "end": "2026-07-01T13:02:27.933000Z",
+        "machine_ids": [
+          "Marcos"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 826,
+          "screenshot_smart": 560,
+          "mouse_click": 101,
+          "browser_navigation": 31,
+          "browser_click": 99,
+          "shortcut": 231,
+          "keystroke": 570,
+          "window_state_change": 2,
+          "clipboard_change": 44,
+          "window_title_change": 4,
+          "mouse_scroll": 67,
+          "browser_form_input": 33,
+          "extension_connected": 1,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "upload_started": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 1845,
+          "L1": 560,
+          "L3": 164
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1230-Marcos",
+            "events": 2519,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1300-Marcos",
+            "events": 58,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-124033-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 2704,
+        "start": "2026-07-01T12:40:33.775000Z",
+        "end": "2026-07-01T13:07:34.821000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 879,
+          "mouse_click": 98,
+          "screenshot_smart": 561,
+          "window_state_change": 5,
+          "browser_navigation": 29,
+          "browser_click": 95,
+          "shortcut": 214,
+          "keystroke": 610,
+          "clipboard_change": 113,
+          "mouse_scroll": 49,
+          "browser_form_input": 32,
+          "window_title_change": 8,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1978,
+          "L1": 561,
+          "L3": 158
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1230-SIDDHIGUPTAB00B",
+            "events": 2092,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1300-SIDDHIGUPTAB00B",
+            "events": 612,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-124550-LAPTOP-0IM1OHQH",
+        "chunks": 2,
+        "events": 2550,
+        "start": "2026-07-01T12:45:50.894000Z",
+        "end": "2026-07-01T13:09:55.009000Z",
+        "machine_ids": [
+          "LAPTOP-0IM1OHQH"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 818,
+          "screenshot_smart": 574,
+          "mouse_click": 99,
+          "window_state_change": 6,
+          "browser_navigation": 28,
+          "browser_click": 96,
+          "shortcut": 228,
+          "keystroke": 582,
+          "clipboard_change": 30,
+          "mouse_scroll": 44,
+          "browser_form_input": 32,
+          "window_title_change": 6,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1813,
+          "L1": 574,
+          "L3": 156
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1230-LAPTOP-0IM1OHQH",
+            "events": 1452,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1300-LAPTOP-0IM1OHQH",
+            "events": 1098,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-124636-MSI",
+        "chunks": 2,
+        "events": 2827,
+        "start": "2026-07-01T12:46:36.674000Z",
+        "end": "2026-07-01T13:10:27.595000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 870,
+          "screenshot_smart": 613,
+          "keystroke": 632,
+          "window_title_change": 15,
+          "extension_connected": 3,
+          "browser_tab_event": 6,
+          "browser_navigation": 35,
+          "browser_click": 101,
+          "mouse_click": 101,
+          "shortcut": 231,
+          "clipboard_change": 117,
+          "mouse_scroll": 52,
+          "browser_form_input": 35,
+          "window_state_change": 3,
+          "upload_started": 1,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "upload_completed": 1,
+          "browser_alert": 2,
+          "text_input_complete": 2,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 2025,
+          "L1": 613,
+          "L3": 179
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1230-MSI",
+            "events": 1588,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1300-MSI",
+            "events": 1239,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-131015-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 2798,
+        "start": "2026-07-01T13:10:15.664000Z",
+        "end": "2026-07-01T13:36:49.910000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 978,
+          "mouse_click": 103,
+          "window_state_change": 5,
+          "screenshot_smart": 583,
+          "browser_navigation": 26,
+          "browser_click": 99,
+          "shortcut": 221,
+          "keystroke": 570,
+          "clipboard_change": 111,
+          "mouse_scroll": 52,
+          "browser_form_input": 33,
+          "window_title_change": 5,
+          "extension_connected": 1,
+          "browser_tab_event": 2,
+          "browser_alert": 1,
+          "extension_disconnected": 4,
+          "upload_started": 1,
+          "upload_failed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 2045,
+          "L1": 583,
+          "L3": 161
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1300-SIDDHIGUPTAB00B",
+            "events": 2373,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1330-SIDDHIGUPTAB00B",
+            "events": 425,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-131247-MSI",
+        "chunks": 2,
+        "events": 2929,
+        "start": "2026-07-01T13:12:47.847000Z",
+        "end": "2026-07-01T13:34:52.951000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 958,
+          "screenshot_smart": 631,
+          "keystroke": 638,
+          "shortcut": 236,
+          "window_state_change": 2,
+          "mouse_scroll": 50,
+          "window_title_change": 10,
+          "text_input_complete": 3,
+          "extension_connected": 3,
+          "browser_navigation": 30,
+          "browser_tab_event": 6,
+          "browser_click": 101,
+          "mouse_click": 101,
+          "clipboard_change": 117,
+          "browser_form_input": 34,
+          "browser_alert": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 2115,
+          "L1": 631,
+          "L3": 173
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1300-MSI",
+            "events": 2564,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1330-MSI",
+            "events": 365,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-134215-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 2892,
+        "start": "2026-07-01T13:42:15.810000Z",
+        "end": "2026-07-01T14:08:46.635000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 799,
+          "mouse_click": 112,
+          "screenshot_smart": 611,
+          "window_state_change": 5,
+          "browser_navigation": 34,
+          "browser_click": 109,
+          "window_title_change": 4,
+          "shortcut": 233,
+          "keystroke": 756,
+          "mouse_scroll": 61,
+          "clipboard_change": 114,
+          "browser_form_input": 37,
+          "browser_alert": 4,
+          "text_input_complete": 4,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 2090,
+          "L1": 611,
+          "L3": 184
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1330-SIDDHIGUPTAB00B",
+            "events": 1579,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1400-SIDDHIGUPTAB00B",
+            "events": 1313,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-141430-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 3200,
+        "start": "2026-07-01T14:14:30.282000Z",
+        "end": "2026-07-01T14:43:09.434000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 971,
+          "mouse_click": 116,
+          "screenshot_smart": 654,
+          "window_state_change": 4,
+          "browser_navigation": 33,
+          "browser_click": 111,
+          "shortcut": 245,
+          "keystroke": 822,
+          "clipboard_change": 123,
+          "mouse_scroll": 51,
+          "browser_form_input": 38,
+          "browser_alert": 7,
+          "text_input_complete": 6,
+          "window_title_change": 7,
+          "extension_connected": 1,
+          "browser_tab_event": 3,
+          "extension_disconnected": 4,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 2345,
+          "L1": 654,
+          "L3": 192
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1400-SIDDHIGUPTAB00B",
+            "events": 1754,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1430-SIDDHIGUPTAB00B",
+            "events": 1446,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-145907-MSI",
+        "chunks": 2,
+        "events": 2987,
+        "start": "2026-07-01T14:59:07.332000Z",
+        "end": "2026-07-01T15:24:22.468000Z",
+        "machine_ids": [
+          "MSI"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 853,
+          "screenshot_smart": 633,
+          "keystroke": 770,
+          "extension_connected": 3,
+          "browser_navigation": 35,
+          "browser_tab_event": 5,
+          "window_title_change": 12,
+          "upload_started": 1,
+          "browser_click": 106,
+          "mouse_click": 105,
+          "upload_completed": 1,
+          "shortcut": 239,
+          "mouse_scroll": 49,
+          "clipboard_change": 117,
+          "browser_form_input": 38,
+          "window_state_change": 1,
+          "browser_alert": 6,
+          "text_input_complete": 6,
+          "dialog_opened": 1,
+          "dialog_closed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 2154,
+          "L1": 633,
+          "L3": 190
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1430-MSI",
+            "events": 40,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1500-MSI",
+            "events": 2947,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-152030-CHAITANYA0BCF",
+        "chunks": 1,
+        "events": 945,
+        "start": "2026-07-01T15:20:30.551000Z",
+        "end": "2026-07-01T15:29:59.864000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 338,
+          "keystroke": 188,
+          "screenshot_smart": 199,
+          "mouse_click": 33,
+          "browser_navigation": 8,
+          "browser_click": 33,
+          "shortcut": 73,
+          "clipboard_change": 39,
+          "mouse_scroll": 14,
+          "browser_form_input": 11,
+          "window_state_change": 4,
+          "window_title_change": 4
+        },
+        "layers": {
+          "SYSTEM": 1,
+          "L2": 693,
+          "L1": 199,
+          "L3": 52
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1500-CHAITANYA0BCF",
+            "events": 945,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-155031-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2404,
+        "start": "2026-07-01T15:50:31.796000Z",
+        "end": "2026-07-01T16:15:08.257000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 1,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 716,
+          "keystroke": 558,
+          "screenshot_smart": 487,
+          "mouse_click": 87,
+          "browser_navigation": 26,
+          "browser_click": 84,
+          "shortcut": 180,
+          "clipboard_change": 98,
+          "mouse_scroll": 117,
+          "browser_form_input": 29,
+          "window_state_change": 5,
+          "browser_alert": 2,
+          "window_title_change": 6,
+          "text_input_complete": 2,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 7,
+          "L2": 1769,
+          "L1": 487,
+          "L3": 141
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1530-CHAITANYA0BCF",
+            "events": 1175,
+            "screenshots_present": false,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1600-CHAITANYA0BCF",
+            "events": 1229,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-172430-yuvraj",
+        "chunks": 2,
+        "events": 1931,
+        "start": "2026-07-01T17:24:30.299000Z",
+        "end": "2026-07-01T17:44:25.266000Z",
+        "machine_ids": [
+          "yuvraj"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 690,
+          "screenshot_smart": 426,
+          "browser_navigation": 25,
+          "browser_click": 81,
+          "mouse_click": 82,
+          "shortcut": 135,
+          "keystroke": 356,
+          "mouse_scroll": 31,
+          "clipboard_change": 64,
+          "browser_form_input": 27,
+          "extension_connected": 1,
+          "window_state_change": 2,
+          "window_title_change": 4,
+          "browser_alert": 1,
+          "browser_tab_event": 1,
+          "extension_disconnected": 1,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 6,
+          "L2": 1364,
+          "L1": 426,
+          "L3": 135
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1700-yuvraj",
+            "events": 350,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1730-yuvraj",
+            "events": 1581,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "Dataset B",
+    "path": "P:\\I'm beside you\\operation-log-automation\\data\\dataset_b",
+    "sessions": 15,
+    "total_chunks": 20,
+    "total_events": 20477,
+    "avg_chunks_per_session": 1.3333333333333333,
+    "min_chunks_per_session": 1,
+    "max_chunks_per_session": 2,
+    "avg_events_per_session": 1365.1333333333334,
+    "min_events_per_session": 781,
+    "max_events_per_session": 2015,
+    "event_types": {
+      "session_start": 15,
+      "app_switch": 1654,
+      "screenshot_smart": 4759,
+      "mouse_click": 2133,
+      "keystroke": 4678,
+      "window_state_change": 120,
+      "window_title_change": 186,
+      "extension_connected": 42,
+      "browser_navigation": 204,
+      "browser_error": 38,
+      "browser_click": 1914,
+      "shortcut": 1386,
+      "mouse_scroll": 1724,
+      "clipboard_change": 872,
+      "browser_form_input": 608,
+      "text_input_complete": 77,
+      "extension_disconnected": 42,
+      "session_end": 15,
+      "upload_started": 5,
+      "mouse_double_click": 1,
+      "upload_completed": 4
+    },
+    "layers": {
+      "SYSTEM": 123,
+      "L2": 12831,
+      "L1": 4759,
+      "L3": 2764
+    },
+    "sessions_detail": [
+      {
+        "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+        "chunks": 1,
+        "events": 1613,
+        "start": "2026-07-01T16:44:24.390000Z",
+        "end": "2026-07-01T16:55:47.346000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 98,
+          "screenshot_smart": 304,
+          "mouse_click": 125,
+          "keystroke": 274,
+          "window_state_change": 8,
+          "window_title_change": 14,
+          "extension_connected": 3,
+          "browser_navigation": 13,
+          "browser_error": 3,
+          "browser_click": 119,
+          "shortcut": 75,
+          "mouse_scroll": 482,
+          "clipboard_change": 46,
+          "browser_form_input": 38,
+          "text_input_complete": 6,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 1128,
+          "L1": 304,
+          "L3": 173
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1630-CHAITANYA0BCF",
+            "events": 1613,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-171614-CHAITANYA0BCF",
+        "chunks": 2,
+        "events": 2015,
+        "start": "2026-07-01T17:16:14.350000Z",
+        "end": "2026-07-01T17:30:13.013000Z",
+        "machine_ids": [
+          "CHAITANYA0BCF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 123,
+          "screenshot_smart": 404,
+          "mouse_click": 171,
+          "keystroke": 732,
+          "window_state_change": 8,
+          "window_title_change": 19,
+          "extension_connected": 3,
+          "browser_navigation": 17,
+          "browser_error": 3,
+          "browser_click": 167,
+          "shortcut": 108,
+          "mouse_scroll": 122,
+          "clipboard_change": 63,
+          "browser_form_input": 55,
+          "text_input_complete": 14,
+          "upload_started": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 9,
+          "L2": 1360,
+          "L1": 404,
+          "L3": 242
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1700-CHAITANYA0BCF",
+            "events": 1996,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1730-CHAITANYA0BCF",
+            "events": 19,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+        "chunks": 1,
+        "events": 1439,
+        "start": "2026-07-01T17:32:46.100000Z",
+        "end": "2026-07-01T17:45:33.518000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 135,
+          "mouse_click": 160,
+          "screenshot_smart": 364,
+          "window_state_change": 7,
+          "window_title_change": 20,
+          "extension_connected": 3,
+          "browser_navigation": 17,
+          "browser_error": 3,
+          "browser_click": 157,
+          "shortcut": 106,
+          "keystroke": 244,
+          "clipboard_change": 71,
+          "mouse_scroll": 95,
+          "browser_form_input": 52,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 838,
+          "L1": 364,
+          "L3": 229
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1730-SIDDHIGUPTAB00B",
+            "events": 1439,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-173642-NEELA9BAF",
+        "chunks": 1,
+        "events": 1136,
+        "start": "2026-07-01T17:36:42.813000Z",
+        "end": "2026-07-01T17:47:03.748000Z",
+        "machine_ids": [
+          "NEELA9BAF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 83,
+          "window_state_change": 10,
+          "window_title_change": 6,
+          "screenshot_smart": 281,
+          "extension_connected": 3,
+          "browser_navigation": 16,
+          "browser_error": 3,
+          "mouse_click": 138,
+          "browser_click": 136,
+          "mouse_scroll": 74,
+          "shortcut": 68,
+          "keystroke": 212,
+          "clipboard_change": 51,
+          "browser_form_input": 44,
+          "text_input_complete": 5,
+          "extension_disconnected": 3,
+          "mouse_double_click": 1,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 648,
+          "L1": 281,
+          "L3": 199
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1730-NEELA9BAF",
+            "events": 1136,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-175258-LAPTOP-76QMG9DE",
+        "chunks": 2,
+        "events": 1550,
+        "start": "2026-07-01T17:52:58.085000Z",
+        "end": "2026-07-01T18:06:36.075000Z",
+        "machine_ids": [
+          "LAPTOP-76QMG9DE"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 111,
+          "screenshot_smart": 371,
+          "window_state_change": 6,
+          "window_title_change": 11,
+          "extension_connected": 3,
+          "browser_error": 2,
+          "browser_navigation": 15,
+          "browser_click": 162,
+          "mouse_click": 164,
+          "mouse_scroll": 102,
+          "shortcut": 115,
+          "keystroke": 352,
+          "clipboard_change": 68,
+          "browser_form_input": 53,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "text_input_complete": 8,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 937,
+          "L1": 371,
+          "L3": 232
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1730-LAPTOP-76QMG9DE",
+            "events": 842,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1800-LAPTOP-76QMG9DE",
+            "events": 708,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+        "chunks": 2,
+        "events": 1309,
+        "start": "2026-07-01T17:57:47.661000Z",
+        "end": "2026-07-01T18:09:18.447000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 67,
+          "screenshot_smart": 323,
+          "mouse_click": 158,
+          "keystroke": 246,
+          "text_input_complete": 7,
+          "window_state_change": 3,
+          "window_title_change": 9,
+          "extension_connected": 3,
+          "browser_navigation": 17,
+          "browser_error": 3,
+          "browser_click": 156,
+          "mouse_scroll": 111,
+          "shortcut": 84,
+          "clipboard_change": 64,
+          "browser_form_input": 51,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 749,
+          "L1": 323,
+          "L3": 227
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1730-SIDDHIGUPTAB00B",
+            "events": 260,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1800-SIDDHIGUPTAB00B",
+            "events": 1049,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-180923-NEELA9BAF",
+        "chunks": 1,
+        "events": 1349,
+        "start": "2026-07-01T18:09:23.713000Z",
+        "end": "2026-07-01T18:22:03.575000Z",
+        "machine_ids": [
+          "NEELA9BAF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 111,
+          "window_state_change": 10,
+          "mouse_click": 150,
+          "screenshot_smart": 332,
+          "extension_connected": 3,
+          "browser_navigation": 17,
+          "browser_error": 3,
+          "shortcut": 102,
+          "keystroke": 258,
+          "clipboard_change": 63,
+          "mouse_scroll": 88,
+          "browser_click": 148,
+          "browser_form_input": 49,
+          "window_title_change": 10,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 792,
+          "L1": 332,
+          "L3": 217
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1800-NEELA9BAF",
+            "events": 1349,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+        "chunks": 1,
+        "events": 1518,
+        "start": "2026-07-01T18:14:13.186000Z",
+        "end": "2026-07-01T18:27:18.448000Z",
+        "machine_ids": [
+          "LAPTOP-76QMG9DE"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 142,
+          "screenshot_smart": 357,
+          "window_state_change": 8,
+          "window_title_change": 13,
+          "extension_connected": 3,
+          "browser_navigation": 12,
+          "browser_error": 1,
+          "browser_click": 151,
+          "mouse_click": 157,
+          "mouse_scroll": 92,
+          "shortcut": 102,
+          "keystroke": 354,
+          "clipboard_change": 60,
+          "browser_form_input": 49,
+          "text_input_complete": 12,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 940,
+          "L1": 357,
+          "L3": 213
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1800-LAPTOP-76QMG9DE",
+            "events": 1518,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+        "chunks": 1,
+        "events": 1165,
+        "start": "2026-07-01T18:19:13.159000Z",
+        "end": "2026-07-01T18:29:29.277000Z",
+        "machine_ids": [
+          "SIDDHIGUPTAB00B"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 122,
+          "window_state_change": 5,
+          "window_title_change": 15,
+          "screenshot_smart": 292,
+          "extension_connected": 3,
+          "browser_navigation": 12,
+          "browser_error": 3,
+          "browser_click": 119,
+          "mouse_click": 111,
+          "shortcut": 82,
+          "keystroke": 248,
+          "clipboard_change": 48,
+          "browser_form_input": 25,
+          "text_input_complete": 3,
+          "mouse_scroll": 72,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 706,
+          "L1": 292,
+          "L3": 159
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1800-SIDDHIGUPTAB00B",
+            "events": 1165,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-182634-NEELA9BAF",
+        "chunks": 2,
+        "events": 1001,
+        "start": "2026-07-01T18:26:34.400000Z",
+        "end": "2026-07-01T18:37:05.834000Z",
+        "machine_ids": [
+          "NEELA9BAF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 100,
+          "window_state_change": 9,
+          "window_title_change": 11,
+          "screenshot_smart": 241,
+          "extension_connected": 3,
+          "browser_navigation": 13,
+          "browser_error": 3,
+          "mouse_click": 114,
+          "shortcut": 61,
+          "keystroke": 186,
+          "browser_click": 112,
+          "mouse_scroll": 59,
+          "clipboard_change": 44,
+          "browser_form_input": 35,
+          "text_input_complete": 3,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 10,
+          "L2": 587,
+          "L1": 241,
+          "L3": 163
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1800-NEELA9BAF",
+            "events": 352,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1830-NEELA9BAF",
+            "events": 649,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+        "chunks": 1,
+        "events": 781,
+        "start": "2026-07-01T18:32:32.132000Z",
+        "end": "2026-07-01T18:39:41.610000Z",
+        "machine_ids": [
+          "LAPTOP-76QMG9DE"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "extension_connected": 3,
+          "browser_navigation": 11,
+          "browser_error": 3,
+          "screenshot_smart": 193,
+          "app_switch": 52,
+          "window_state_change": 4,
+          "window_title_change": 4,
+          "mouse_click": 108,
+          "browser_click": 100,
+          "mouse_scroll": 72,
+          "shortcut": 50,
+          "keystroke": 104,
+          "clipboard_change": 40,
+          "browser_form_input": 32,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L3": 146,
+          "L1": 193,
+          "L2": 434
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1830-LAPTOP-76QMG9DE",
+            "events": 781,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+        "chunks": 1,
+        "events": 1895,
+        "start": "2026-07-01T18:42:01.374000Z",
+        "end": "2026-07-01T18:58:28.158000Z",
+        "machine_ids": [
+          "LAPTOP-76QMG9DE"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 228,
+          "screenshot_smart": 456,
+          "window_state_change": 20,
+          "window_title_change": 23,
+          "extension_connected": 3,
+          "browser_navigation": 18,
+          "browser_error": 3,
+          "browser_click": 157,
+          "mouse_click": 161,
+          "shortcut": 163,
+          "keystroke": 430,
+          "clipboard_change": 80,
+          "mouse_scroll": 97,
+          "browser_form_input": 51,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 1202,
+          "L1": 456,
+          "L3": 229
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1830-LAPTOP-76QMG9DE",
+            "events": 1895,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-190250-NEELA9BAF",
+        "chunks": 1,
+        "events": 1146,
+        "start": "2026-07-01T19:02:50.219000Z",
+        "end": "2026-07-01T19:12:55.612000Z",
+        "machine_ids": [
+          "NEELA9BAF"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 113,
+          "window_state_change": 9,
+          "window_title_change": 12,
+          "screenshot_smart": 275,
+          "extension_connected": 3,
+          "browser_navigation": 12,
+          "browser_error": 3,
+          "browser_click": 115,
+          "mouse_click": 115,
+          "shortcut": 84,
+          "keystroke": 252,
+          "text_input_complete": 5,
+          "mouse_scroll": 55,
+          "clipboard_change": 51,
+          "browser_form_input": 37,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 696,
+          "L1": 275,
+          "L3": 167
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1900-NEELA9BAF",
+            "events": 1146,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+        "chunks": 1,
+        "events": 1562,
+        "start": "2026-07-01T19:15:37.798000Z",
+        "end": "2026-07-01T19:26:55.504000Z",
+        "machine_ids": [
+          "LAPTOP-76QMG9DE"
+        ],
+        "screenshots_present_in_chunks": 1,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 86,
+          "window_state_change": 5,
+          "window_title_change": 7,
+          "screenshot_smart": 328,
+          "extension_connected": 3,
+          "browser_navigation": 14,
+          "browser_error": 2,
+          "browser_click": 115,
+          "mouse_click": 139,
+          "mouse_scroll": 96,
+          "shortcut": 99,
+          "keystroke": 556,
+          "clipboard_change": 60,
+          "browser_form_input": 37,
+          "text_input_complete": 10,
+          "extension_disconnected": 3,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 8,
+          "L2": 1058,
+          "L1": 328,
+          "L3": 168
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1900-LAPTOP-76QMG9DE",
+            "events": 1562,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      },
+      {
+        "session_id": "ses_20260701-192455-NEELA9BAF",
+        "chunks": 2,
+        "events": 998,
+        "start": "2026-07-01T19:24:55.727000Z",
+        "end": "2026-07-01T19:35:59.773000Z",
+        "machine_ids": [
+          "NEELA9BAF"
+        ],
+        "screenshots_present_in_chunks": 2,
+        "chunks_without_screenshots": 0,
+        "missing_events_files": 0,
+        "invalid_json_lines": 0,
+        "events_with_missing_required_fields": 0,
+        "event_types": {
+          "session_start": 1,
+          "app_switch": 83,
+          "window_state_change": 8,
+          "screenshot_smart": 238,
+          "mouse_click": 162,
+          "mouse_scroll": 107,
+          "shortcut": 87,
+          "keystroke": 230,
+          "clipboard_change": 63,
+          "window_title_change": 12,
+          "upload_started": 1,
+          "upload_completed": 1,
+          "text_input_complete": 4,
+          "session_end": 1
+        },
+        "layers": {
+          "SYSTEM": 4,
+          "L2": 756,
+          "L1": 238
+        },
+        "chunk_summaries": [
+          {
+            "chunk_id": "chunk_20260701-1900-NEELA9BAF",
+            "events": 409,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          },
+          {
+            "chunk_id": "chunk_20260701-1930-NEELA9BAF",
+            "events": 589,
+            "screenshots_present": true,
+            "events_file_missing": false,
+            "invalid_json_lines": 0,
+            "missing_required_fields": 0
+          }
+        ]
+      }
+    ]
+  }
+]
