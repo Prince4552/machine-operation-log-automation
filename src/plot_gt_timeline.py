@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
 
 
 def parse_timestamp(value: str) -> datetime:
@@ -14,23 +15,25 @@ def parse_timestamp(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
-def load_session_executions(payload: dict[str, Any], session_id: str | None) -> tuple[str, list[dict[str, Any]]]:
+def load_session_executions(
+    payload: dict[str, Any],
+    session_id: str | None,
+) -> tuple[str, list[dict[str, Any]]]:
     """
     Support both:
-    1. the old single-session GT format:
+    1. old single-session GT:
        {"session_id": "...", "executions": [...]}
-    2. the current multi-session ground_truth.json format:
+    2. current multi-session GT:
        {"sessions": [{"session_id": "...", "executions": [...]}, ...]}
     """
-    # Current multi-session format.
     sessions = payload.get("sessions")
+
     if isinstance(sessions, list):
         session_map: dict[str, dict[str, Any]] = {}
 
         for session in sessions:
             if not isinstance(session, dict):
                 continue
-
             sid = session.get("session_id")
             if isinstance(sid, str) and sid:
                 session_map[sid] = session
@@ -38,12 +41,7 @@ def load_session_executions(payload: dict[str, Any], session_id: str | None) -> 
         if not session_map:
             raise ValueError("No valid sessions found in the ground-truth JSON.")
 
-        if session_id is None:
-            # Preserve the existing one-session visualization workflow:
-            # use the first session when no --session is supplied.
-            selected_id = next(iter(session_map))
-        else:
-            selected_id = session_id
+        selected_id = session_id or next(iter(session_map))
 
         if selected_id not in session_map:
             raise ValueError(
@@ -60,8 +58,8 @@ def load_session_executions(payload: dict[str, Any], session_id: str | None) -> 
 
         return selected_id, executions
 
-    # Backward-compatible single-session format.
     executions = payload.get("executions")
+
     if isinstance(executions, list):
         selected_id = payload.get("session_id")
 
@@ -144,6 +142,10 @@ def main() -> None:
     labels = sorted({item["process_code"] for item in executions})
     y_positions = {label: index for index, label in enumerate(labels)}
 
+    session_start = min(
+        parse_timestamp(item["start"]) for item in executions
+    )
+
     fig, ax = plt.subplots(
         figsize=(14, max(4, 1 + 0.7 * len(labels)))
     )
@@ -151,26 +153,43 @@ def main() -> None:
     for execution in executions:
         start = parse_timestamp(execution["start"])
         end = parse_timestamp(execution["end"])
-        duration = (end - start).total_seconds()
+
+        # Use seconds relative to the session start.
+        # This is important: matplotlib's datetime axis uses days as its
+        # numeric unit, so passing a raw number of seconds as bar width would
+        # incorrectly create bars that are tens/hundreds of days long.
+        left_seconds = (start - session_start).total_seconds()
+        duration_seconds = (end - start).total_seconds()
 
         y = y_positions[execution["process_code"]]
 
         ax.barh(
             y,
-            duration,
-            left=start,
+            duration_seconds,
+            left=left_seconds,
             height=0.55,
         )
 
     ax.set_yticks(list(y_positions.values()))
     ax.set_yticklabels(labels)
-    ax.set_xlabel("UTC time")
+    ax.set_xlabel("Time since session start")
     ax.set_ylabel("Process code")
     ax.set_title(
         f"Dataset A GT execution timeline — {selected_session_id}"
     )
 
-    fig.autofmt_xdate()
+    def format_elapsed(value: float, _position: float) -> str:
+        total_seconds = max(0, int(round(value)))
+        hours, remainder = divmod(total_seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+
+        if hours:
+            return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+        return f"{minutes:02d}:{seconds:02d}"
+
+    ax.xaxis.set_major_formatter(FuncFormatter(format_elapsed))
+    ax.grid(axis="x", alpha=0.25)
+
     fig.tight_layout()
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -178,6 +197,7 @@ def main() -> None:
     plt.close(fig)
 
     print(f"Session: {selected_session_id}")
+    print(f"Session start: {session_start.isoformat()}")
     print(f"Executions plotted: {len(executions)}")
     print(f"Saved timeline plot to {args.output.resolve()}")
 
