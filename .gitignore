@@ -2,5 +2,6 @@ data/
 __pycache__/
 *.pyc
 .venv/
-.ipynb_checkpoints/outputs/
+.ipynb_checkpoints/
+outputs/
 reports/inspection/
