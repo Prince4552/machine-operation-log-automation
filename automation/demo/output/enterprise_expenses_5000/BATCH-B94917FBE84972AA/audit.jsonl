@@ -1,0 +1,3 @@
+{"timestamp": "2026-09-19T13:16:17.166416Z", "event": "RUN_STARTED", "payload": {"batch_id": "BATCH-B94917FBE84972AA", "input": "enterprise_expenses_5000.csv"}}
+{"timestamp": "2026-09-19T13:16:19.232627Z", "event": "VALIDATED", "payload": {"errors": 0, "warnings": 0}}
+{"timestamp": "2026-09-19T13:16:19.232666Z", "event": "READY_FOR_APPROVAL", "payload": {"batch_id": "BATCH-B94917FBE84972AA"}}

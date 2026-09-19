@@ -1,0 +1,31 @@
+{
+  "schema_version": "workflow003-enterprise-demo-2",
+  "reporting_currency": "JPY",
+  "amount_decimal_places": 2,
+  "supported_currencies": [
+    "JPY",
+    "USD",
+    "EUR"
+  ],
+  "allowed_categories": [
+    "travel",
+    "meal",
+    "accommodation",
+    "other"
+  ],
+  "max_line_amount_by_category": {
+    "travel": "200000",
+    "meal": "100000",
+    "accommodation": "300000",
+    "other": "100000"
+  },
+  "receipt_required_categories": [
+    "travel",
+    "meal",
+    "accommodation"
+  ],
+  "notes": {
+    "fx_rate_to_reporting": "Input must contain the approved source-system FX rate for the transaction date.",
+    "production": "Replace demonstration limits and policies with approved company rules before production use."
+  }
+}

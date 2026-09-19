@@ -1,0 +1,20 @@
+﻿severity,source_sheet,source_row,expense_id,code,message
+ERROR,Expenses,1801,EXP-001800,SCHEMA_VALIDATION,one or more required text fields are empty
+ERROR,Expenses,3601,EXP-003600,SCHEMA_VALIDATION,one or more required text fields are empty
+ERROR,Expenses,5401,EXP-005400,SCHEMA_VALIDATION,one or more required text fields are empty
+ERROR,Expenses,7201,EXP-007200,SCHEMA_VALIDATION,one or more required text fields are empty
+ERROR,Expenses,9001,EXP-009000,SCHEMA_VALIDATION,one or more required text fields are empty
+ERROR,Expenses,2,EXP-000001,DUPLICATE_EXPENSE_ID,expense_id appears more than once
+WARNING,Expenses,1501,EXP-001500,AMOUNT_LIMIT,275000.00 exceeds category limit 200000
+ERROR,Expenses,2001,EXP-000001,DUPLICATE_EXPENSE_ID,expense_id appears more than once
+WARNING,Expenses,3001,EXP-003000,AMOUNT_LIMIT,275000.00 exceeds category limit 200000
+ERROR,Expenses,3334,EXP-003333,UNSUPPORTED_CURRENCY,GBP is not configured
+ERROR,Expenses,4001,EXP-000001,DUPLICATE_EXPENSE_ID,expense_id appears more than once
+WARNING,Expenses,4501,EXP-004500,AMOUNT_LIMIT,275000.00 exceeds category limit 200000
+ERROR,Expenses,6001,EXP-000001,DUPLICATE_EXPENSE_ID,expense_id appears more than once
+WARNING,Expenses,6001,EXP-000001,AMOUNT_LIMIT,275000.00 exceeds category limit 200000
+ERROR,Expenses,6667,EXP-006666,UNSUPPORTED_CURRENCY,GBP is not configured
+WARNING,Expenses,7501,EXP-007500,AMOUNT_LIMIT,275000.00 exceeds category limit 200000
+ERROR,Expenses,8001,EXP-000001,DUPLICATE_EXPENSE_ID,expense_id appears more than once
+ERROR,Expenses,10000,EXP-009999,UNSUPPORTED_CURRENCY,GBP is not configured
+ERROR,Expenses,10001,EXP-000001,DUPLICATE_EXPENSE_ID,expense_id appears more than once

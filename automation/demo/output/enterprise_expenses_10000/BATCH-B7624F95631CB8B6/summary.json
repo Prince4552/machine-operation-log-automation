@@ -1,0 +1,977 @@
+{
+  "reporting_currency": "JPY",
+  "summary_metrics": {
+    "input_rows": 10000,
+    "valid_rows": 10000,
+    "error_rows": 0,
+    "warning_rows": 0,
+    "unique_expense_ids": 10000,
+    "duplicate_expense_ids": 0,
+    "unique_employees": 250,
+    "unique_departments": 8,
+    "unique_projects": 40,
+    "unique_merchants": 14,
+    "subtotal_reporting": 38048726811.0,
+    "discount_reporting": 270654495.35,
+    "tax_reporting": 3634269579.89,
+    "total_expense_reporting": 41412341895.54,
+    "reimbursable_expense_reporting": 30708734490.5,
+    "non_reimbursable_expense_reporting": 10703607405.04,
+    "average_transaction_reporting": 4141234.19,
+    "median_transaction_reporting": 3046612.8,
+    "min_transaction_reporting": 446.31,
+    "max_transaction_reporting": 18173192.4,
+    "receipt_missing_count": 0,
+    "receipt_exception_count": 0,
+    "high_amount_exception_count": 0,
+    "potential_duplicate_count": 0
+  },
+  "exception_counts": {},
+  "receipt_coverage": 1.0,
+  "group_metrics": {
+    "by_employee": [
+      {
+        "employee_ref": "EMP-0001",
+        "count": 40,
+        "reporting_total": 253930173.75
+      },
+      {
+        "employee_ref": "EMP-0105",
+        "count": 40,
+        "reporting_total": 252116620.03
+      },
+      {
+        "employee_ref": "EMP-0053",
+        "count": 40,
+        "reporting_total": 250834939.19
+      },
+      {
+        "employee_ref": "EMP-0147",
+        "count": 40,
+        "reporting_total": 246267928.17
+      },
+      {
+        "employee_ref": "EMP-0209",
+        "count": 40,
+        "reporting_total": 246208560.51
+      },
+      {
+        "employee_ref": "EMP-0157",
+        "count": 40,
+        "reporting_total": 245169703.13
+      },
+      {
+        "employee_ref": "EMP-0095",
+        "count": 40,
+        "reporting_total": 243309904.53
+      },
+      {
+        "employee_ref": "EMP-0199",
+        "count": 40,
+        "reporting_total": 240575701.41
+      },
+      {
+        "employee_ref": "EMP-0167",
+        "count": 40,
+        "reporting_total": 238463193.87
+      },
+      {
+        "employee_ref": "EMP-0179",
+        "count": 40,
+        "reporting_total": 238034788.64
+      },
+      {
+        "employee_ref": "EMP-0075",
+        "count": 40,
+        "reporting_total": 237247510.83
+      },
+      {
+        "employee_ref": "EMP-0023",
+        "count": 40,
+        "reporting_total": 236817023.19
+      },
+      {
+        "employee_ref": "EMP-0011",
+        "count": 40,
+        "reporting_total": 236340966.95
+      },
+      {
+        "employee_ref": "EMP-0229",
+        "count": 40,
+        "reporting_total": 236147440.21
+      },
+      {
+        "employee_ref": "EMP-0241",
+        "count": 40,
+        "reporting_total": 235791001.05
+      },
+      {
+        "employee_ref": "EMP-0127",
+        "count": 40,
+        "reporting_total": 235488991.87
+      },
+      {
+        "employee_ref": "EMP-0189",
+        "count": 40,
+        "reporting_total": 232463227.81
+      },
+      {
+        "employee_ref": "EMP-0177",
+        "count": 40,
+        "reporting_total": 231549226.81
+      },
+      {
+        "employee_ref": "EMP-0149",
+        "count": 40,
+        "reporting_total": 231342871.21
+      },
+      {
+        "employee_ref": "EMP-0043",
+        "count": 40,
+        "reporting_total": 230579062.89
+      },
+      {
+        "employee_ref": "EMP-0083",
+        "count": 40,
+        "reporting_total": 229946633.29
+      },
+      {
+        "employee_ref": "EMP-0169",
+        "count": 40,
+        "reporting_total": 227393036.31
+      },
+      {
+        "employee_ref": "EMP-0073",
+        "count": 40,
+        "reporting_total": 225306503.29
+      },
+      {
+        "employee_ref": "EMP-0117",
+        "count": 40,
+        "reporting_total": 225254825.07
+      },
+      {
+        "employee_ref": "EMP-0221",
+        "count": 40,
+        "reporting_total": 225130880.15
+      },
+      {
+        "employee_ref": "EMP-0085",
+        "count": 40,
+        "reporting_total": 225076528.93
+      },
+      {
+        "employee_ref": "EMP-0231",
+        "count": 40,
+        "reporting_total": 224361767.85
+      },
+      {
+        "employee_ref": "EMP-0033",
+        "count": 40,
+        "reporting_total": 222155166.09
+      },
+      {
+        "employee_ref": "EMP-0115",
+        "count": 40,
+        "reporting_total": 221534461.83
+      },
+      {
+        "employee_ref": "EMP-0219",
+        "count": 40,
+        "reporting_total": 221099494.11
+      },
+      {
+        "employee_ref": "EMP-0021",
+        "count": 40,
+        "reporting_total": 220497949.1
+      },
+      {
+        "employee_ref": "EMP-0243",
+        "count": 40,
+        "reporting_total": 220341959.09
+      },
+      {
+        "employee_ref": "EMP-0239",
+        "count": 40,
+        "reporting_total": 220327959.61
+      },
+      {
+        "employee_ref": "EMP-0063",
+        "count": 40,
+        "reporting_total": 219844229.99
+      },
+      {
+        "employee_ref": "EMP-0137",
+        "count": 40,
+        "reporting_total": 219812103.61
+      },
+      {
+        "employee_ref": "EMP-0135",
+        "count": 40,
+        "reporting_total": 219770549.13
+      },
+      {
+        "employee_ref": "EMP-0201",
+        "count": 40,
+        "reporting_total": 219406800.25
+      },
+      {
+        "employee_ref": "EMP-0125",
+        "count": 40,
+        "reporting_total": 218396336.73
+      },
+      {
+        "employee_ref": "EMP-0055",
+        "count": 40,
+        "reporting_total": 218071458.33
+      },
+      {
+        "employee_ref": "EMP-0031",
+        "count": 40,
+        "reporting_total": 217077446.85
+      },
+      {
+        "employee_ref": "EMP-0003",
+        "count": 40,
+        "reporting_total": 217006587.49
+      },
+      {
+        "employee_ref": "EMP-0013",
+        "count": 40,
+        "reporting_total": 216163341.79
+      },
+      {
+        "employee_ref": "EMP-0097",
+        "count": 40,
+        "reporting_total": 215715610.77
+      },
+      {
+        "employee_ref": "EMP-0065",
+        "count": 40,
+        "reporting_total": 215014400.37
+      },
+      {
+        "employee_ref": "EMP-0211",
+        "count": 40,
+        "reporting_total": 214353242.95
+      },
+      {
+        "employee_ref": "EMP-0223",
+        "count": 40,
+        "reporting_total": 213440006.01
+      },
+      {
+        "employee_ref": "EMP-0187",
+        "count": 40,
+        "reporting_total": 213040071.97
+      },
+      {
+        "employee_ref": "EMP-0158",
+        "count": 40,
+        "reporting_total": 212463101.97
+      },
+      {
+        "employee_ref": "EMP-0025",
+        "count": 40,
+        "reporting_total": 211566695.23
+      },
+      {
+        "employee_ref": "EMP-0155",
+        "count": 40,
+        "reporting_total": 210303076.83
+      },
+      {
+        "employee_ref": "EMP-0041",
+        "count": 40,
+        "reporting_total": 209848961.85
+      },
+      {
+        "employee_ref": "EMP-0045",
+        "count": 40,
+        "reporting_total": 209454990.69
+      },
+      {
+        "employee_ref": "EMP-0087",
+        "count": 40,
+        "reporting_total": 209346592.18
+      },
+      {
+        "employee_ref": "EMP-0061",
+        "count": 40,
+        "reporting_total": 208304859.95
+      },
+      {
+        "employee_ref": "EMP-0107",
+        "count": 40,
+        "reporting_total": 206081524.77
+      },
+      {
+        "employee_ref": "EMP-0191",
+        "count": 40,
+        "reporting_total": 205091849.05
+      },
+      {
+        "employee_ref": "EMP-0197",
+        "count": 40,
+        "reporting_total": 205044573.47
+      },
+      {
+        "employee_ref": "EMP-0207",
+        "count": 40,
+        "reporting_total": 204751936.07
+      },
+      {
+        "employee_ref": "EMP-0165",
+        "count": 40,
+        "reporting_total": 204322056.73
+      },
+      {
+        "employee_ref": "EMP-0159",
+        "count": 40,
+        "reporting_total": 204165863.77
+      },
+      {
+        "employee_ref": "EMP-0103",
+        "count": 40,
+        "reporting_total": 203630960.39
+      },
+      {
+        "employee_ref": "EMP-0113",
+        "count": 40,
+        "reporting_total": 203509529.96
+      },
+      {
+        "employee_ref": "EMP-0009",
+        "count": 40,
+        "reporting_total": 203264547.31
+      },
+      {
+        "employee_ref": "EMP-0077",
+        "count": 40,
+        "reporting_total": 201678399.67
+      },
+      {
+        "employee_ref": "EMP-0067",
+        "count": 40,
+        "reporting_total": 201608713.79
+      },
+      {
+        "employee_ref": "EMP-0093",
+        "count": 40,
+        "reporting_total": 201185464.59
+      },
+      {
+        "employee_ref": "EMP-0249",
+        "count": 40,
+        "reporting_total": 200508246.29
+      },
+      {
+        "employee_ref": "EMP-0119",
+        "count": 40,
+        "reporting_total": 200409473.11
+      },
+      {
+        "employee_ref": "EMP-0171",
+        "count": 40,
+        "reporting_total": 200179965.15
+      },
+      {
+        "employee_ref": "EMP-0078",
+        "count": 40,
+        "reporting_total": 199726852.77
+      },
+      {
+        "employee_ref": "EMP-0008",
+        "count": 40,
+        "reporting_total": 199463192.57
+      },
+      {
+        "employee_ref": "EMP-0129",
+        "count": 40,
+        "reporting_total": 198796763.11
+      },
+      {
+        "employee_ref": "EMP-0139",
+        "count": 40,
+        "reporting_total": 198647131.21
+      },
+      {
+        "employee_ref": "EMP-0181",
+        "count": 40,
+        "reporting_total": 198507912.35
+      },
+      {
+        "employee_ref": "EMP-0108",
+        "count": 40,
+        "reporting_total": 196887160.57
+      },
+      {
+        "employee_ref": "EMP-0035",
+        "count": 40,
+        "reporting_total": 194934514.83
+      },
+      {
+        "employee_ref": "EMP-0145",
+        "count": 40,
+        "reporting_total": 194545253.43
+      },
+      {
+        "employee_ref": "EMP-0051",
+        "count": 40,
+        "reporting_total": 193537874.75
+      },
+      {
+        "employee_ref": "EMP-0161",
+        "count": 40,
+        "reporting_total": 191450170.45
+      },
+      {
+        "employee_ref": "EMP-0178",
+        "count": 40,
+        "reporting_total": 191310000.47
+      },
+      {
+        "employee_ref": "EMP-0175",
+        "count": 40,
+        "reporting_total": 190215797.53
+      },
+      {
+        "employee_ref": "EMP-0133",
+        "count": 40,
+        "reporting_total": 189931598.23
+      },
+      {
+        "employee_ref": "EMP-0213",
+        "count": 40,
+        "reporting_total": 189876528.49
+      },
+      {
+        "employee_ref": "EMP-0245",
+        "count": 40,
+        "reporting_total": 189673555.72
+      },
+      {
+        "employee_ref": "EMP-0015",
+        "count": 40,
+        "reporting_total": 189606888.13
+      },
+      {
+        "employee_ref": "EMP-0081",
+        "count": 40,
+        "reporting_total": 188657483.85
+      },
+      {
+        "employee_ref": "EMP-0228",
+        "count": 40,
+        "reporting_total": 188272392.51
+      },
+      {
+        "employee_ref": "EMP-0233",
+        "count": 40,
+        "reporting_total": 187784534.19
+      },
+      {
+        "employee_ref": "EMP-0237",
+        "count": 40,
+        "reporting_total": 187622577.67
+      },
+      {
+        "employee_ref": "EMP-0028",
+        "count": 40,
+        "reporting_total": 187231871.57
+      },
+      {
+        "employee_ref": "EMP-0058",
+        "count": 40,
+        "reporting_total": 186691421.37
+      },
+      {
+        "employee_ref": "EMP-0141",
+        "count": 40,
+        "reporting_total": 186278697.55
+      },
+      {
+        "employee_ref": "EMP-0193",
+        "count": 40,
+        "reporting_total": 183917237.79
+      },
+      {
+        "employee_ref": "EMP-0203",
+        "count": 40,
+        "reporting_total": 183607017.77
+      },
+      {
+        "employee_ref": "EMP-0217",
+        "count": 40,
+        "reporting_total": 182788142.57
+      },
+      {
+        "employee_ref": "EMP-0047",
+        "count": 40,
+        "reporting_total": 181886054.57
+      },
+      {
+        "employee_ref": "EMP-0120",
+        "count": 40,
+        "reporting_total": 181682705.15
+      },
+      {
+        "employee_ref": "EMP-0040",
+        "count": 40,
+        "reporting_total": 181522446.63
+      },
+      {
+        "employee_ref": "EMP-0005",
+        "count": 40,
+        "reporting_total": 180889933.73
+      },
+      {
+        "employee_ref": "EMP-0071",
+        "count": 40,
+        "reporting_total": 179592843.65
+      }
+    ],
+    "by_department": [
+      {
+        "department": "HR",
+        "count": 1250,
+        "reporting_total": 7169036163.3
+      },
+      {
+        "department": "Legal",
+        "count": 1250,
+        "reporting_total": 7150973746.29
+      },
+      {
+        "department": "Engineering",
+        "count": 1250,
+        "reporting_total": 5359607779.24
+      },
+      {
+        "department": "Finance",
+        "count": 1250,
+        "reporting_total": 5343999625.8
+      },
+      {
+        "department": "Operations",
+        "count": 1250,
+        "reporting_total": 4337727703.32
+      },
+      {
+        "department": "IT",
+        "count": 1250,
+        "reporting_total": 4299963704.74
+      },
+      {
+        "department": "Sales",
+        "count": 1250,
+        "reporting_total": 3889206976.14
+      },
+      {
+        "department": "Procurement",
+        "count": 1250,
+        "reporting_total": 3861826196.71
+      }
+    ],
+    "by_category": [
+      {
+        "category": "accommodation",
+        "count": 2500,
+        "reporting_total": 14320009909.59
+      },
+      {
+        "category": "travel",
+        "count": 2500,
+        "reporting_total": 10703607405.04
+      },
+      {
+        "category": "meal",
+        "count": 2500,
+        "reporting_total": 8637691408.06
+      },
+      {
+        "category": "other",
+        "count": 2500,
+        "reporting_total": 7751033172.85
+      }
+    ],
+    "by_project": [
+      {
+        "project_code": "PRJ-0043",
+        "count": 250,
+        "reporting_total": 1450166162.72
+      },
+      {
+        "project_code": "PRJ-0079",
+        "count": 250,
+        "reporting_total": 1440575966.28
+      },
+      {
+        "project_code": "PRJ-0091",
+        "count": 250,
+        "reporting_total": 1438798655.8
+      },
+      {
+        "project_code": "PRJ-0055",
+        "count": 250,
+        "reporting_total": 1437970763.24
+      },
+      {
+        "project_code": "PRJ-0007",
+        "count": 250,
+        "reporting_total": 1433558149.76
+      },
+      {
+        "project_code": "PRJ-0103",
+        "count": 250,
+        "reporting_total": 1432959711.92
+      },
+      {
+        "project_code": "PRJ-0067",
+        "count": 250,
+        "reporting_total": 1426466392.56
+      },
+      {
+        "project_code": "PRJ-0031",
+        "count": 250,
+        "reporting_total": 1423971572.1
+      },
+      {
+        "project_code": "PRJ-0019",
+        "count": 250,
+        "reporting_total": 1422009352.28
+      },
+      {
+        "project_code": "PRJ-0115",
+        "count": 250,
+        "reporting_total": 1413533182.93
+      },
+      {
+        "project_code": "PRJ-0088",
+        "count": 250,
+        "reporting_total": 1300454034.48
+      },
+      {
+        "project_code": "PRJ-0028",
+        "count": 250,
+        "reporting_total": 1273396130.28
+      },
+      {
+        "project_code": "PRJ-0085",
+        "count": 250,
+        "reporting_total": 1085067177.92
+      },
+      {
+        "project_code": "PRJ-0037",
+        "count": 250,
+        "reporting_total": 1077371615.32
+      },
+      {
+        "project_code": "PRJ-0073",
+        "count": 250,
+        "reporting_total": 1075164954.16
+      },
+      {
+        "project_code": "PRJ-0025",
+        "count": 250,
+        "reporting_total": 1072986480.72
+      },
+      {
+        "project_code": "PRJ-0061",
+        "count": 250,
+        "reporting_total": 1072140550.8
+      },
+      {
+        "project_code": "PRJ-0097",
+        "count": 250,
+        "reporting_total": 1071953987.28
+      },
+      {
+        "project_code": "PRJ-0049",
+        "count": 250,
+        "reporting_total": 1063626892.24
+      },
+      {
+        "project_code": "PRJ-0013",
+        "count": 250,
+        "reporting_total": 1063073872.96
+      },
+      {
+        "project_code": "PRJ-0109",
+        "count": 250,
+        "reporting_total": 1061954562.24
+      },
+      {
+        "project_code": "PRJ-0001",
+        "count": 250,
+        "reporting_total": 1060267311.4
+      },
+      {
+        "project_code": "PRJ-0100",
+        "count": 250,
+        "reporting_total": 1032265778.82
+      },
+      {
+        "project_code": "PRJ-0040",
+        "count": 250,
+        "reporting_total": 1031439684.12
+      },
+      {
+        "project_code": "PRJ-0070",
+        "count": 250,
+        "reporting_total": 872473354.72
+      },
+      {
+        "project_code": "PRJ-0046",
+        "count": 250,
+        "reporting_total": 867947436.4
+      },
+      {
+        "project_code": "PRJ-0022",
+        "count": 250,
+        "reporting_total": 867681026.08
+      },
+      {
+        "project_code": "PRJ-0034",
+        "count": 250,
+        "reporting_total": 867436924.64
+      },
+      {
+        "project_code": "PRJ-0094",
+        "count": 250,
+        "reporting_total": 865258613.56
+      },
+      {
+        "project_code": "PRJ-0118",
+        "count": 250,
+        "reporting_total": 864367272.56
+      },
+      {
+        "project_code": "PRJ-0082",
+        "count": 250,
+        "reporting_total": 860833020.08
+      },
+      {
+        "project_code": "PRJ-0058",
+        "count": 250,
+        "reporting_total": 860021215.9
+      },
+      {
+        "project_code": "PRJ-0106",
+        "count": 250,
+        "reporting_total": 856465253.6
+      },
+      {
+        "project_code": "PRJ-0010",
+        "count": 250,
+        "reporting_total": 855207290.52
+      },
+      {
+        "project_code": "PRJ-0112",
+        "count": 250,
+        "reporting_total": 776266062.72
+      },
+      {
+        "project_code": "PRJ-0052",
+        "count": 250,
+        "reporting_total": 774592075.09
+      },
+      {
+        "project_code": "PRJ-0004",
+        "count": 250,
+        "reporting_total": 518677919.16
+      },
+      {
+        "project_code": "PRJ-0064",
+        "count": 250,
+        "reporting_total": 518112649.32
+      },
+      {
+        "project_code": "PRJ-0016",
+        "count": 250,
+        "reporting_total": 262934545.5
+      },
+      {
+        "project_code": "PRJ-0076",
+        "count": 250,
+        "reporting_total": 262894293.36
+      }
+    ],
+    "by_merchant": [
+      {
+        "merchant": "Hotel Group C",
+        "count": 2500,
+        "reporting_total": 14320009909.59
+      },
+      {
+        "merchant": "JAL",
+        "count": 833,
+        "reporting_total": 5539457163.24
+      },
+      {
+        "merchant": "Railway Services",
+        "count": 834,
+        "reporting_total": 5129925636.0
+      },
+      {
+        "merchant": "Misc Services",
+        "count": 500,
+        "reporting_total": 2573850164.76
+      },
+      {
+        "merchant": "Printing Co",
+        "count": 500,
+        "reporting_total": 2063705462.94
+      },
+      {
+        "merchant": "Restaurant B",
+        "count": 500,
+        "reporting_total": 1732695538.2
+      },
+      {
+        "merchant": "Cafe Central",
+        "count": 500,
+        "reporting_total": 1728514046.16
+      },
+      {
+        "merchant": "Business Dining",
+        "count": 500,
+        "reporting_total": 1727680645.24
+      },
+      {
+        "merchant": "Restaurant A",
+        "count": 500,
+        "reporting_total": 1724412690.0
+      },
+      {
+        "merchant": "Catering Co",
+        "count": 500,
+        "reporting_total": 1724388488.46
+      },
+      {
+        "merchant": "Software Store",
+        "count": 500,
+        "reporting_total": 1550858137.81
+      },
+      {
+        "merchant": "Courier Service",
+        "count": 500,
+        "reporting_total": 1036790568.48
+      },
+      {
+        "merchant": "Office Supply Co",
+        "count": 500,
+        "reporting_total": 525828838.86
+      },
+      {
+        "merchant": "JR East",
+        "count": 833,
+        "reporting_total": 34224605.8
+      }
+    ],
+    "by_payment_method": [
+      {
+        "payment_method": "EmployeeReimbursement",
+        "count": 2500,
+        "reporting_total": 14320009909.59
+      },
+      {
+        "payment_method": "CorporateCard",
+        "count": 2500,
+        "reporting_total": 10703607405.04
+      },
+      {
+        "payment_method": "Cash",
+        "count": 2500,
+        "reporting_total": 8637691408.06
+      },
+      {
+        "payment_method": "BankTransfer",
+        "count": 2500,
+        "reporting_total": 7751033172.85
+      }
+    ],
+    "by_currency": [
+      {
+        "currency": "EUR",
+        "count": 3333,
+        "local_total": 141258507.48,
+        "reporting_total": 22883878211.76
+      },
+      {
+        "currency": "USD",
+        "count": 3334,
+        "local_total": 122824990.49,
+        "reporting_total": 18423748573.5
+      },
+      {
+        "currency": "JPY",
+        "count": 3333,
+        "local_total": 104715110.28,
+        "reporting_total": 104715110.28
+      }
+    ],
+    "by_month": [
+      {
+        "month": "2026-03",
+        "count": 834,
+        "reporting_total": 8849649986.1
+      },
+      {
+        "month": "2026-09",
+        "count": 833,
+        "reporting_total": 5539457163.24
+      },
+      {
+        "month": "2026-11",
+        "count": 833,
+        "reporting_total": 5452191129.0
+      },
+      {
+        "month": "2026-05",
+        "count": 834,
+        "reporting_total": 5129925636.0
+      },
+      {
+        "month": "2026-12",
+        "count": 833,
+        "reporting_total": 4484183208.12
+      },
+      {
+        "month": "2026-08",
+        "count": 833,
+        "reporting_total": 4125998877.0
+      },
+      {
+        "month": "2026-06",
+        "count": 833,
+        "reporting_total": 4010587854.3
+      },
+      {
+        "month": "2026-02",
+        "count": 834,
+        "reporting_total": 3715632931.5
+      },
+      {
+        "month": "2026-01",
+        "count": 833,
+        "reporting_total": 34224605.8
+      },
+      {
+        "month": "2026-04",
+        "count": 834,
+        "reporting_total": 27509322.94
+      },
+      {
+        "month": "2026-10",
+        "count": 833,
+        "reporting_total": 24812387.05
+      },
+      {
+        "month": "2026-07",
+        "count": 833,
+        "reporting_total": 18168794.49
+      }
+    ]
+  }
+}

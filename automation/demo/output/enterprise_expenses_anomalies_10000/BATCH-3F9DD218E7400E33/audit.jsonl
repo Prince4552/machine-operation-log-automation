@@ -1,0 +1,3 @@
+{"timestamp": "2026-09-19T13:16:19.238903Z", "event": "RUN_STARTED", "payload": {"batch_id": "BATCH-3F9DD218E7400E33", "input": "enterprise_expenses_anomalies_10000.xlsx"}}
+{"timestamp": "2026-09-19T13:16:24.408244Z", "event": "VALIDATED", "payload": {"errors": 14, "warnings": 5}}
+{"timestamp": "2026-09-19T13:16:24.408283Z", "event": "RUN_BLOCKED", "payload": {"batch_id": "BATCH-3F9DD218E7400E33"}}

@@ -1,0 +1,5 @@
+{"timestamp": "2026-09-19T13:16:11.884771Z", "event": "RUN_STARTED", "payload": {"batch_id": "BATCH-B7624F95631CB8B6", "input": "enterprise_expenses_10000.xlsx"}}
+{"timestamp": "2026-09-19T13:16:17.155321Z", "event": "VALIDATED", "payload": {"errors": 0, "warnings": 0}}
+{"timestamp": "2026-09-19T13:16:17.155362Z", "event": "READY_FOR_APPROVAL", "payload": {"batch_id": "BATCH-B7624F95631CB8B6"}}
+{"timestamp": "2026-09-19T13:16:50.903878Z", "event": "APPROVED", "payload": {"approver": "demo-reviewer", "reason": "Reviewed calculated totals and exception-free input", "timestamp": "2026-09-19T13:16:50.903406Z"}}
+{"timestamp": "2026-09-19T13:16:51.606938Z", "event": "SUBMITTED_MOCK", "payload": {"mode": "MOCK", "transaction_id": "MOCK-TXN-307C908D2265EC71", "submitted_at": "2026-09-19T13:16:51.606390Z", "message": "No external system was contacted."}}

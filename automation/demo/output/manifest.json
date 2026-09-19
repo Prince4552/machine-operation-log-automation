@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-09-19T13:16:29.691776Z",
+  "processed_files": [
+    {
+      "input": "demo/input/enterprise_expenses_10000.xlsx",
+      "batch_id": "BATCH-B7624F95631CB8B6",
+      "status": "READY_FOR_APPROVAL",
+      "rows": 10000,
+      "errors": 0,
+      "warnings": 0,
+      "batch_dir": "demo/output/enterprise_expenses_10000/BATCH-B7624F95631CB8B6"
+    },
+    {
+      "input": "demo/input/enterprise_expenses_5000.csv",
+      "batch_id": "BATCH-B94917FBE84972AA",
+      "status": "READY_FOR_APPROVAL",
+      "rows": 5000,
+      "errors": 0,
+      "warnings": 0,
+      "batch_dir": "demo/output/enterprise_expenses_5000/BATCH-B94917FBE84972AA"
+    },
+    {
+      "input": "demo/input/enterprise_expenses_anomalies_10000.xlsx",
+      "batch_id": "BATCH-3F9DD218E7400E33",
+      "status": "BLOCKED",
+      "rows": 9995,
+      "errors": 14,
+      "warnings": 5,
+      "batch_dir": "demo/output/enterprise_expenses_anomalies_10000/BATCH-3F9DD218E7400E33"
+    },
+    {
+      "input": "demo/input/enterprise_expenses_multi_sheet_10000.xlsx",
+      "batch_id": "BATCH-AA62C435A03426CB",
+      "status": "READY_FOR_APPROVAL",
+      "rows": 10000,
+      "errors": 0,
+      "warnings": 0,
+      "batch_dir": "demo/output/enterprise_expenses_multi_sheet_10000/BATCH-AA62C435A03426CB"
+    }
+  ],
+  "failures": []
+}
