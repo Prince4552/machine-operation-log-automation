@@ -39,9 +39,9 @@ The final Dataset B result contains:
 
 I also kept three concepts separate because they mean different things:
 
-**Workflow cluster** — for example, `WORKFLOW\\\\\\\\\\\\\\\_003`. This is an internal cluster ID produced by unsupervised process discovery. It is not the original business-process name.
+**Workflow cluster** — for example, `WORKFLOW\_003`. This is an internal cluster ID produced by unsupervised process discovery. It is not the original business-process name.
 
-**Inferred execution occurrence** — for example, `WORKFLOW\\\\\\\\\\\\\\\_003\\\\\\\\\\\\\\\_EXEC\\\\\\\\\\\\\\\_0001`. This is an ID that I generated for one inferred contiguous occurrence. It is not an original case ID or execution ID from the source system.
+**Inferred execution occurrence** — for example, `WORKFLOW\_003\_EXEC\_0001`. This is an ID that I generated for one inferred contiguous occurrence. It is not an original case ID or execution ID from the source system.
 
 **Business-process type** — a human-readable interpretation such as "Expense calculation / settlement support", based on recurring evidence in the cluster.
 
@@ -55,10 +55,10 @@ The 20 discovered workflow clusters were not equally clear.
 
 Some had strong recurring evidence. For example:
 
-* `WORKFLOW\\\\\\\\\\\\\\\_003` repeatedly used an `expense\\\\\\\\\\\\\\\_calc` Excel artifact and the financial-accounting system.
-* `WORKFLOW\\\\\\\\\\\\\\\_010` repeatedly used a new-hire checklist together with the HR system.
-* `WORKFLOW\\\\\\\\\\\\\\\_004` repeatedly used the monthly fixed-amount business-partner list.
-* `WORKFLOW\\\\\\\\\\\\\\\_016` repeatedly contained an administrator-permission request procedure.
+* `WORKFLOW\_003` repeatedly used an `expense\_calc` Excel artifact and the financial-accounting system.
+* `WORKFLOW\_010` repeatedly used a new-hire checklist together with the HR system.
+* `WORKFLOW\_004` repeatedly used the monthly fixed-amount business-partner list.
+* `WORKFLOW\_016` repeatedly contained an administrator-permission request procedure.
 
 Other clusters mixed several systems or contained too little distinctive evidence to justify a narrow process name. I kept those clusters generic rather than inventing a business meaning.
 
@@ -66,28 +66,28 @@ The human-readable interpretation of the major clusters was:
 
 |Workflow|Inferred business type|Confidence|Occurrences|Sessions|Recorded time|
 |-|-|-|-:|-:|-:|
-|`WORKFLOW\\\\\\\\\\\\\\\_006`|Supplier / business-partner / contract administration|High|64|10|26.2 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_014`|Outsourced-work acceptance / expense administration|High|43|8|18.7 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_004`|Monthly fixed-amount business-partner list review|High|43|9|16.8 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_010`|New-hire onboarding / employee joining verification|High|41|9|17.8 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_007`|HR/order-system administrative review|Low|32|10|12.9 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_005`|HR-system administrative handling|Low|26|4|12.9 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_008`|HR-system administrative handling|Low|22|7|10.7 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_018`|Mixed HR/order/accounting administrative handling|Low|21|2|8.9 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_003`|Expense calculation / settlement support|High|17|7|7.7 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_015`|Expense settlement confirmation|High|15|8|6.1 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_001`|Mixed administrative handling|Low|13|10|4.3 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_002`|Mixed financial/HR administrative handling|Low|12|9|6.7 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_013`|Childcare / nursing-care leave administration|High|11|4|5.0 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_016`|Administrator access / permission request|High|11|4|6.9 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_009`|Mixed HR/order-system administrative handling|Low|9|7|5.3 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_011`|Budget analysis / financial planning support|High|7|1|2.9 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_012`|Financial-accounting administrative handling|Low|5|5|3.1 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_017`|Mixed administrative handling|Low|3|2|1.1 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_019`|HR case/comment entry or confirmation|Medium|3|2|1.1 min|
-|`WORKFLOW\\\\\\\\\\\\\\\_020`|Order/inventory-system administrative handling|Low|2|1|1.0 min|
+|`WORKFLOW\_006`|Supplier / business-partner / contract administration|High|64|10|26.2 min|
+|`WORKFLOW\_014`|Outsourced-work acceptance / expense administration|High|43|8|18.7 min|
+|`WORKFLOW\_004`|Monthly fixed-amount business-partner list review|High|43|9|16.8 min|
+|`WORKFLOW\_010`|New-hire onboarding / employee joining verification|High|41|9|17.8 min|
+|`WORKFLOW\_007`|HR/order-system administrative review|Low|32|10|12.9 min|
+|`WORKFLOW\_005`|HR-system administrative handling|Low|26|4|12.9 min|
+|`WORKFLOW\_008`|HR-system administrative handling|Low|22|7|10.7 min|
+|`WORKFLOW\_018`|Mixed HR/order/accounting administrative handling|Low|21|2|8.9 min|
+|`WORKFLOW\_003`|Expense calculation / settlement support|High|17|7|7.7 min|
+|`WORKFLOW\_015`|Expense settlement confirmation|High|15|8|6.1 min|
+|`WORKFLOW\_001`|Mixed administrative handling|Low|13|10|4.3 min|
+|`WORKFLOW\_002`|Mixed financial/HR administrative handling|Low|12|9|6.7 min|
+|`WORKFLOW\_013`|Childcare / nursing-care leave administration|High|11|4|5.0 min|
+|`WORKFLOW\_016`|Administrator access / permission request|High|11|4|6.9 min|
+|`WORKFLOW\_009`|Mixed HR/order-system administrative handling|Low|9|7|5.3 min|
+|`WORKFLOW\_011`|Budget analysis / financial planning support|High|7|1|2.9 min|
+|`WORKFLOW\_012`|Financial-accounting administrative handling|Low|5|5|3.1 min|
+|`WORKFLOW\_017`|Mixed administrative handling|Low|3|2|1.1 min|
+|`WORKFLOW\_019`|HR case/comment entry or confirmation|Medium|3|2|1.1 min|
+|`WORKFLOW\_020`|Order/inventory-system administrative handling|Low|2|1|1.0 min|
 
-The detailed evidence catalogue is kept separately in `outputs/dataset\\\\\\\\\\\\\\\_b/task2\\\\\\\\\\\\\\\_business/task2\\\\\\\\\\\\\\\_business\\\\\\\\\\\\\\\_workflow\\\\\\\\\\\\\\\_catalog.md`.
+The detailed evidence catalogue is kept separately in `outputs/dataset\_b/task2\_business/task2\_business\_workflow\_catalog.md`.
 
 The recorded minutes are useful for comparing workflows inside this dataset. I did not treat them as direct production time savings because the README notes that the recordings come from a test environment with shorter waiting times than production.
 
@@ -120,7 +120,7 @@ This became my prototype target.
 
 There were 17 inferred occurrences across 7 sessions and about 7.7 minutes of recorded activity.
 
-The strongest evidence was unusually consistent: the same `expense\\\\\\\\\\\\\\\_calc` Excel artifact appeared in all 17 occurrences. Microsoft Excel appeared in all 17, the financial-accounting system in 12, and Microsoft Edge in 16.
+The strongest evidence was unusually consistent: the same `expense\_calc` Excel artifact appeared in all 17 occurrences. Microsoft Excel appeared in all 17, the financial-accounting system in 12, and Microsoft Edge in 16.
 
 The visible pattern suggested a repeated flow around:
 
@@ -147,7 +147,7 @@ It also allowed me to demonstrate a complete automation pipeline without pretend
 
 This workflow had 41 occurrences across 9 sessions and about 17.8 recorded minutes.
 
-The strongest evidence was the repeated `nyusha\\\\\\\\\\\\\\\_checklist\\\\\\\\\\\\\\\_shinsotsu\\\\\\\\\\\\\\\_batch` artifact, which appeared in 40 of 41 occurrences, together with the HR system.
+The strongest evidence was the repeated `nyusha\_checklist\_shinsotsu\_batch` artifact, which appeared in 40 of 41 occurrences, together with the HR system.
 
 This is a strong automation candidate because the work appears to involve repeated movement from a checklist/source document into structured HR-system information.
 
@@ -159,7 +159,7 @@ I did not choose it for the first prototype because it involves sensitive employ
 
 This workflow had 43 occurrences across 9 sessions and about 16.8 recorded minutes.
 
-The recurring `getsujitsu\\\\\\\\\\\\\\\_teigaku\\\\\\\\\\\\\\\_torihikisaki\\\\\\\\\\\\\\\_ichiran` artifact appeared in 31 occurrences. The workflow repeatedly involved the financial-accounting system, Edge, Word, and supporting systems.
+The recurring `getsujitsu\_teigaku\_torihikisaki\_ichiran` artifact appeared in 31 occurrences. The workflow repeatedly involved the financial-accounting system, Edge, Word, and supporting systems.
 
 This is naturally suited to report generation, data extraction and validation.
 
@@ -169,7 +169,7 @@ I placed it behind the first candidate because the workflow spans many applicati
 
 # 6\. Why I did not choose the largest workflow
 
-`WORKFLOW\\\\\\\\\\\\\\\_006` had the largest observed workload:
+`WORKFLOW\_006` had the largest observed workload:
 
 * 64 occurrences;
 * 10 sessions;
@@ -177,15 +177,15 @@ I placed it behind the first candidate because the workflow spans many applicati
 
 It looked attractive based on volume alone, but closer inspection showed that the cluster contained several related procedures:
 
-* `shinkuitorihikisaki\\\\\\\\\\\\\\\_touroku\\\\\\\\\\\\\\\_tetsuzuki`
-* `shinkui\\\\\\\\\\\\\\\_keiyaku\\\\\\\\\\\\\\\_tetsuzuki`
-* `keiyaku\\\\\\\\\\\\\\\_kaijo\\\\\\\\\\\\\\\_tetsuzuki`
+* `shinkuitorihikisaki\_touroku\_tetsuzuki`
+* `shinkui\_keiyaku\_tetsuzuki`
+* `keiyaku\_kaijo\_tetsuzuki`
 
 The workflow also involved six applications and substantial application switching.
 
 I therefore treated it as a potentially high-impact future automation area, but not a good four-hour prototype target. I would first split it into smaller procedures before automating it.
 
-The same reasoning applied to `WORKFLOW\\\\\\\\\\\\\\\_014`: it had a high workload, but its evidence covered more than one related work family.
+The same reasoning applied to `WORKFLOW\_014`: it had a high workload, but its evidence covered more than one related work family.
 
 Smaller workflows were also excluded when their business meaning was unclear, their session coverage was too narrow, or the likely automation would require an important human authorization decision.
 
@@ -220,7 +220,7 @@ Exception detection
 Excel + CSV output and analytics
       |
       v
-READY\\\\\\\\\\\\\\\_FOR\\\\\\\\\\\\\\\_APPROVAL
+READY\_FOR\_APPROVAL
       |
       v
 Human approval
@@ -246,19 +246,19 @@ The prototype uses transparent, configurable calculation rules.
 
 For each expense row:
 
-`subtotal = quantity × unit\\\\\\\\\\\\\\\_amount`
+`subtotal = quantity × unit\_amount`
 
-`discount = subtotal × discount\\\\\\\\\\\\\\\_rate`
+`discount = subtotal × discount\_rate`
 
-`taxable\\\\\\\\\\\\\\\_amount = subtotal − discount`
+`taxable\_amount = subtotal − discount`
 
-`tax = taxable\\\\\\\\\\\\\\\_amount × tax\\\\\\\\\\\\\\\_rate`
+`tax = taxable\_amount × tax\_rate`
 
-`calculated\\\\\\\\\\\\\\\_amount = taxable\\\\\\\\\\\\\\\_amount + tax`
+`calculated\_amount = taxable\_amount + tax`
 
-`reporting\\\\\\\\\\\\\\\_amount = calculated\\\\\\\\\\\\\\\_amount × approved FX rate`
+`reporting\_amount = calculated\_amount × approved FX rate`
 
-The output workbook also documents these rules in a separate `Calculation\\\\\\\\\\\\\\\_Rules` sheet.
+The output workbook also documents these rules in a separate `Calculation\_Rules` sheet.
 
 These are demonstration rules rather than claims about the company's actual accounting policy. The logs prove the repeated Excel/accounting workflow, but they do not expose the complete production formula. The production version would replace the demo rules with the approved company rules.
 
@@ -291,10 +291,10 @@ The pipeline also produces:
 The resulting workbook contains:
 
 * `Summary`
-* `Calculated\\\\\\\\\\\\\\\_Data`
+* `Calculated\_Data`
 * `Exceptions`
 * employee/department/category/project/merchant/payment/currency/month analysis sheets
-* `Calculation\\\\\\\\\\\\\\\_Rules`
+* `Calculation\_Rules`
 
 This makes the result useful as a review package rather than just another CSV.
 
@@ -308,7 +308,7 @@ The program has a built-in self-test and a separate test suite.
 
 The self-test passed:
 
-`Preflight WORKFLOW\\\\\\\\\\\\\\\_003 automation v2 self-test: PASS (7 assertions)`
+`Preflight WORKFLOW\_003 automation v2 self-test: PASS (7 assertions)`
 
 The external test suite passed all five tests:
 
@@ -347,7 +347,7 @@ This is important because an enterprise automation should not only work on clean
 
 The clean 10,000-row batch was taken through the complete state flow:
 
-`READY\\\\\\\\\\\\\\\_FOR\\\\\\\\\\\\\\\_APPROVAL -> APPROVED -> SUBMITTED`
+`READY\_FOR\_APPROVAL -> APPROVED -> SUBMITTED`
 
 The approval record contains the approver and review reason.
 
@@ -439,7 +439,7 @@ The prototype also demonstrates a more general benefit: once the input/output co
 
 The biggest risk is assuming that the visible Excel operations represent the complete accounting logic.
 
-**Evidence:** the logs show the repeated `expense\\\\\\\\\\\\\\\_calc` workbook and accounting-system interaction, but not the complete formula or policy.
+**Evidence:** the logs show the repeated `expense\_calc` workbook and accounting-system interaction, but not the complete formula or policy.
 
 **Mitigation:** have the accounting/process owner approve the calculation rules before production use, and keep the rules versioned.
 
@@ -545,13 +545,13 @@ For process discovery, I compared several representations. A comprehensive ablat
 
 I then applied the frozen pipeline to Dataset B, produced 400 non-overlapping segments across 15 sessions, discovered 20 workflow clusters, and added a conservative business-type interpretation layer.
 
-Finally, I selected `WORKFLOW\\\\\\\\\\\\\\\_003` for the prototype because it offered the best balance between repeatability, clarity and implementation feasibility.
+Finally, I selected `WORKFLOW\_003` for the prototype because it offered the best balance between repeatability, clarity and implementation feasibility.
 
 \---
 
 # 19\. Time allocation
 
-The original README describes a seven-day task, but I worked through the task on a compressed schedule.
+The original README describes a seven-day task, but I worked through the task on a very compressed schedule.
 
 My practical allocation was:
 
@@ -568,7 +568,7 @@ My practical allocation was:
 * build and evaluate the first ML correlation approach;
 * diagnose over-merging;
 * change to boundary-first ML;
-* validate and freeze `case\\\\\\\\\\\\\\\_segment\\\\\\\\\\\\\\\_ml\\\\\\\\\\\\\\\_v6.py`;
+* validate and freeze `case\_segment\_ml\_v6.py`;
 * compare process-discovery representations.
 
 ### Day 3
@@ -592,7 +592,7 @@ At the end of this work:
 * Task 2 produced workflow-level analysis for 20 discovered clusters.
 * Human-readable process types were inferred only where the evidence supported them.
 * The automation candidates were prioritized using both potential value and practical feasibility.
-* `WORKFLOW\\\\\\\\\\\\\\\_003` was selected for the prototype.
+* `WORKFLOW\_003` was selected for the prototype.
 * The prototype accepts Excel/CSV data, supports multiple files and multiple worksheets, performs validation/calculation/analytics, creates review artifacts, requires approval, records audit events, and provides an idempotent mock submission.
 * The prototype passed its built-in checks, five additional tests, large-file tests, multi-file processing, anomaly handling, approval, and repeat-submission tests.
 
