@@ -50,7 +50,7 @@ STRONG_BRIDGE_MAX_SECONDS = 300.0
 
 # Context-only continuation is deliberately short. This prevents "same Chrome
 # window all afternoon" from becoming one giant process.
-CONTEXT_CONTINUATION_MAX_SECONDS = 12.0
+CONTEXT_CONTINUATION_MAX_SECONDS = 20.0
 
 # Only inspect the most recent members of an execution when looking for a
 # relationship edge. This stops long-range chain effects inside a group.
