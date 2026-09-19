@@ -1,0 +1,17 @@
+{
+  "activities_total": 9169,
+  "activities_assigned_to_segments": 9169,
+  "activities_unassigned_to_any_segment": 0,
+  "assignment_diagnostics": {
+    "activities_total": 9169,
+    "assigned_once": 9169,
+    "unassigned": 0,
+    "boundary_tie_to_previous": 377,
+    "multi_overlap_resolved": 0
+  },
+  "workflows": 20,
+  "segments": 400,
+  "sessions_in_segments": 15,
+  "labels_starting_with_WORK_": 0,
+  "warnings": []
+}
