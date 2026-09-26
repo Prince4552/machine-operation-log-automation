@@ -1,0 +1,30 @@
+{
+  "reference_enterprise_stack": {
+    "supplier_master": {
+      "product": "SAP S/4HANA",
+      "adapter_interface": "PartnerDirectory",
+      "purpose": "supplier/business-partner master data"
+    },
+    "source_to_contract": {
+      "product": "SAP Ariba Contracts",
+      "adapter_interface": "ContractSystem",
+      "purpose": "supplier sourcing and contract workspace"
+    },
+    "case_and_approval": {
+      "product": "ServiceNow Contract Management",
+      "adapter_interface": "WorkflowSystem",
+      "purpose": "request intake, routing, approvals and case state"
+    },
+    "document_repository": {
+      "product": "Microsoft SharePoint",
+      "adapter_interface": "DocumentStore",
+      "purpose": "controlled contract/document storage and lifecycle"
+    },
+    "signature": {
+      "product": "Docusign CLM / eSignature",
+      "adapter_interface": "SignatureProvider",
+      "purpose": "agreement workflow and signing"
+    }
+  },
+  "note": "The prototype uses mock implementations. Production deployment replaces adapters with approved vendor/API integrations. Provider choice is company-specific."
+}

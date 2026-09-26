@@ -1,0 +1,11 @@
+[project]
+name = "supplier-contract-operations-mcp"
+version = "1.0.0"
+description = "Enterprise-style supplier and contract operations MCP prototype"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=2,<3",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"

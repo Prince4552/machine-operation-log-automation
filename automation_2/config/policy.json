@@ -1,0 +1,46 @@
+{
+  "supported_request_types": [
+    "supplier_registration",
+    "contract_creation",
+    "contract_amendment",
+    "contract_termination"
+  ],
+  "request_types": [
+    "supplier_registration",
+    "contract_creation",
+    "contract_amendment",
+    "contract_termination"
+  ],
+  "required_fields": {
+    "supplier_registration": [
+      "legal_name",
+      "tax_id",
+      "registration_id",
+      "country",
+      "currency",
+      "source_reference"
+    ],
+    "contract_creation": [
+      "partner_id",
+      "title",
+      "start_date",
+      "end_date",
+      "currency",
+      "annual_value",
+      "document_id",
+      "owner"
+    ],
+    "contract_amendment": [
+      "justification"
+    ],
+    "contract_termination": [
+      "termination_reason",
+      "requested_end_date",
+      "confirmation_no_open_obligations"
+    ]
+  },
+  "supported_currencies": ["JPY", "USD", "EUR"],
+  "duplicate_candidate_critical_threshold": 3,
+  "review_value_change_ratio": 0.10,
+  "high_value_change_ratio": 0.25
+}
