@@ -1733,3 +1733,288 @@ The last step was documentation refinement and repository cleanup.
 I reviewed the final files, refined the work log and report with the help of Gemini, added the completed files to the repository, made the final commit and uploaded the project to my private GitHub repository.
 At this point, all the planned project work and documentation were completed.
 
+
+
+
+Extended Day – Building a Second Enterprise Automation Prototype
+
+After finishing the main project, I still had around some extra hours available because of the extension of  deadline by one day. At first I considered building another small automation around WORKFLOW_004, which was the monthly fixed-amount business-partner list review workflow. The more I thought about it, the less convinced I was that it was a good use of those remaining hours. The core operation would mostly be comparing one list with another and generating a report, which could be done with a normal Python script. Adding MCP on top of that would not create much extra value.
+
+So I went back to the Task 2 analysis and looked again at the larger WORKFLOW_006 family. This workflow appeared 64 times across 10 sessions and covered around 26.2 minutes of recorded activity. More importantly, the evidence showed repeated supplier and contract procedures, including supplier registration, contract-related work and contract cancellation or termination. The workflow also involved several applications and a lot of application switching. That made it a much better fit for an AI-assisted tool system than simply comparing two spreadsheets.
+
+I therefore changed the plan for the extra prototype. Instead of making another ordinary automation, I decided to build a Supplier and Contract Operations Copilot using MCP.
+
+The main question I wanted to answer was not just, "Can AI run a Python script?" I wanted the AI to actually have access to several useful business capabilities and decide which ones were needed for a request. That is where MCP started making more sense to me.
+
+The idea became something like:
+
+User request
+    ↓
+AI assistant
+    ↓
+MCP
+    ↓
+Supplier / contract / document / workflow tools
+    ↓
+Deterministic validation and policy checks
+    ↓
+Prepared action
+    ↓
+Human approval
+    ↓
+Controlled submission
+
+I made an important architectural decision here. The LLM would not be responsible for making up business rules or directly deciding whether something was safe to submit. The Python service would still handle validation, policy checks, state changes and audit logging. MCP would provide the interface through which an AI host could discover and use those business capabilities.
+
+Designing it like a real enterprise system
+
+I did not want the prototype to depend on one company's exact software because the logs did not provide the real production APIs or system configuration.
+
+Instead, I separated the business logic from the external systems using interfaces for things such as:
+
+supplier/business-partner master;
+contract management;
+document storage;
+workflow and approval;
+e-signature;
+audit storage.
+
+For the prototype, I used mock adapters backed by a local database. The idea was that a real company could later replace the adapters with integrations to its own systems without rewriting the MCP tools or the main business logic.
+
+I also mapped the interfaces to realistic enterprise products that could serve the same roles in a real deployment, such as SAP S/4HANA for supplier master data, SAP Ariba Contracts for contract management, ServiceNow for workflow and approval, SharePoint for controlled documents and DocuSign for signing.
+
+I kept these as reference integrations rather than pretending that the prototype was actually connected to those systems.
+
+Defining the actual capabilities
+
+Instead of exposing one large function, I created a group of smaller business tools.
+
+The MCP server exposes capabilities such as:
+
+search_business_partners
+get_business_partner
+list_partner_contracts
+get_contract
+check_request_completeness
+find_duplicate_candidates
+assess_contract_request
+prepare_contract_case
+request_human_approval
+approve_case
+submit_case
+get_case
+
+The supported request types were:
+
+supplier_registration
+contract_creation
+contract_amendment
+contract_termination
+
+This made the product feel much more like an operations assistant instead of a wrapper around one script.
+
+For example, a request such as:
+
+"Check whether this supplier already exists, see whether they have an active contract, and prepare the registration request."
+
+can involve several different tools before the final result is produced.
+
+The AI can search the supplier master, inspect related contracts, check for possible duplicates, validate the required information and prepare a request for review.
+
+Adding real safety boundaries
+
+Because this is a business-process automation involving suppliers and contracts, I did not want the prototype to behave like an unrestricted AI agent.
+
+I added explicit policy checks for situations such as:
+
+duplicate supplier candidates;
+missing required information;
+unsupported currencies;
+high-value contract changes;
+contract termination when open obligations exist;
+invalid state transitions;
+attempts to submit without approval.
+
+For example, if a contract has unresolved obligations, a termination request is blocked rather than simply being passed through.
+
+The state machine became:
+
+DRAFT
+  ↓
+PENDING_APPROVAL
+  ↓
+APPROVED
+  ↓
+SUBMITTED
+
+with:
+
+BLOCKED
+
+for hard failures.
+
+The service does not allow a blocked case to be approved, and it does not allow a case to be submitted before approval.
+
+I also added deterministic case IDs, audit events and idempotent submission handling so that retrying an already completed operation does not create another submission identity.
+
+Building the mock enterprise environment
+
+To make the prototype more realistic, I generated a non-trivial internal dataset rather than working with only a few hard-coded examples.
+
+The test environment contains more than 1,000 partner records and more than 1,200 contract records, along with relationships between partners, contracts and supporting information.
+
+This allowed me to test searches, contract lookups, duplicate detection, termination checks and state transitions against something closer to a real service workload.
+
+The important point was that the external systems were mocked, but the interfaces and business flow were designed as if those systems were real.
+
+Writing a much larger test suite
+
+I also wanted to avoid repeating the mistake of building a prototype and testing it with only one or two examples.
+
+So I made claude write a large software-style test suite covering:
+
+policy rules;
+required-field validation;
+supported currencies;
+state-machine transitions;
+approval requirements;
+submission restrictions;
+duplicate detection;
+contract lookup behavior;
+high-value change thresholds;
+open-obligation termination blocking;
+deterministic case IDs;
+audit logging;
+lookup limits;
+invalid and malicious queries;
+REST connector configuration;
+MCP tool registration;
+tool signatures and documentation;
+thread-safety of tool calls;
+and other edge cases.
+
+I deliberately generated many cases around the same rules instead of relying on a handful of examples. The final full test run completed with:
+
+457 tests
+457 passed
+0 failed
+
+in about 4.2 seconds.
+
+That gave me much more confidence in the internal business logic than a small demo test would have.
+
+Testing the security side as well
+
+Because the server accepts user-provided search input, I also added malicious-input cases resembling SQL injection, path traversal, script injection and other malformed queries.
+
+The purpose was not to claim that the prototype had solved every possible production security problem. It was to make sure that the basic service layer did not break when it received obviously unsafe or unexpected input.
+
+I also added configuration validation for external REST connectors so that only expected HTTP/HTTPS endpoints could be used.
+
+Building the MCP layer
+
+The next step was connecting the deterministic service to MCP.
+
+The MCP server exposes the business capabilities as tools instead of exposing the internal implementation directly.
+
+I also added a policy resource so the active configured rules can be inspected separately from the tool calls.
+
+For local development, the server is designed to run through the official MCP development flow and can be inspected through an MCP-compatible environment.
+
+I also created a separate runtime verification script intended to test the actual MCP protocol using an in-memory client rather than depending on a real network deployment. The main test suite also contains local MCP wiring tests so that the server's tool registration and function contracts can be checked independently.
+
+Building an actual end-to-end demo
+
+I wanted the final demonstration to show something more meaningful than just:
+
+tool called
+→ response returned
+
+The demo was designed around realistic operations.
+
+For example, a supplier-registration request can follow:
+
+search supplier
+      ↓
+check duplicate candidates
+      ↓
+inspect existing contracts
+      ↓
+validate required information
+      ↓
+assess request
+      ↓
+prepare case
+      ↓
+request approval
+      ↓
+approve
+      ↓
+submit
+
+I also included a contract-termination example where the system detects open obligations and blocks the action.
+
+This was particularly useful because it demonstrated the difference between an AI that can call tools and an AI that is operating inside a controlled business process.
+
+Final smoke test
+
+I ran a small end-to-end demonstration after the larger unit suite.
+
+The smoke test successfully showed:
+
+supplier search returning real mock records;
+a termination request being blocked when open obligations existed;
+a valid supplier-registration case being created;
+the case moving through the approval process;
+and the final mock submission producing a deterministic submission ID.
+
+This gave me a simple way to demonstrate the whole system without needing to connect it to a real enterprise environment.
+
+Keeping the prototype honest
+
+One of the most important decisions during this extended work was not to claim more than the dataset supports.
+
+The logs gave me evidence that supplier/business-partner and contract-related work existed, and that several related procedures occurred repeatedly. They did not tell me the company's exact APIs, approval policy, required master-data fields or complete production business rules.
+
+So I treated the prototype as:
+
+evidence-backed workflow
++
+reasonable enterprise assumptions
++
+replaceable mock integrations
+
+rather than pretending that I had reproduced the company's actual internal system.
+
+That also meant the "submit" operation remained mocked.
+
+No real supplier or contract record was changed.
+
+Final result of the extended work
+
+By the end of the additional work, I had built a second automation prototype that was quite different from the original expense automation.
+
+The first automation was:
+
+WORKFLOW_003
+Expense calculation
+        ↓
+deterministic batch-processing system
+
+The second became:
+
+WORKFLOW_006
+Supplier / contract administration
+        ↓
+MCP-based operations copilot
+        ↓
+multiple enterprise-style tools
+        ↓
+deterministic policy engine
+        ↓
+human approval
+        ↓
+controlled mock submission
+
+The main thing I learned from this extension was that MCP only becomes interesting when the AI has several meaningful capabilities to use. Simply putting MCP in front of a Python function would not have added much value. By moving to a multi-system supplier and contract workflow, MCP became a useful way to expose several business capabilities while keeping the important rules and safety checks inside the deterministic service
+
