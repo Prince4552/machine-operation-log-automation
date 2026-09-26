@@ -1,11 +1,6 @@
 from __future__ import annotations
 
-"""Real MCP runtime verifier. Run locally after installing mcp>=2,<3.
-
-This is intentionally separate from the large dependency-free suite because the
-execution environment used to build this package may not have network access.
-It uses the official SDK's documented in-memory Client(server) test path, which
-exercises the actual MCP protocol implementation without requiring a port.
+"""Real MCP runtime verifier. this is a test file to verify if mcp is running properly or not
 """
 
 import asyncio
