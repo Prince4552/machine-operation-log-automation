@@ -1,11 +1,4 @@
-# I'm Beside You - Operation Log Automation
-
-**Priyanshu Kripashankar Singh**
-**Roll No.: BM24BTECH11020**
-**Email: bm24btech11020@iith.ac.in**
-**IIT Hyderabad - Department of Biomedical Engineering**
-
-This repository contains the final implementation for the "I'm Beside You" operation-log automation task.
+  Operation Log Automation
 
 The project takes low-level desktop operation logs, converts them into meaningful activities, segments those activities into work executions, discovers recurring workflow types, analyses the business meaning of those workflows, and prototypes automation for selected processes.
 
